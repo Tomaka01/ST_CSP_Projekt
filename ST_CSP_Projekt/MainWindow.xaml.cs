@@ -17,9 +17,6 @@ using System.IO;
 
 namespace ST_CSP_Projekt
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -40,40 +37,51 @@ namespace ST_CSP_Projekt
 
             private void button_Click(object sender, RoutedEventArgs e)
         {
-            string nem;
+            string nem = "";
             string fnev = textBox.Text;
             string email = textBox1.Text;
             string jelszo = passwordBox.Password;
             string jelszo1 = passwordBox1.Password;
             string file = fnev + ".txt";
+            string kor = textBox2.Text;
+            int kor1 = 0;
 
 
 
             if (fnev != "" & email != "" & jelszo != "" & jelszo1 != "")
             {
-                
-                int kor = Convert.ToInt32(textBox2.Text);
-                if (jelszo == jelszo1)
-
+                if (int.TryParse(kor, out kor1))
                 {
+                    Szemely person = new Szemely(fnev, email, nem, jelszo, jelszo1, kor1);
+                    if (jelszo == jelszo1)
 
-                    if (radioButton.IsChecked == true)
                     {
-                        nem = "Férfi";
-                        File.WriteAllText(file, fnev + ";" + email + ";" + PassSec(jelszo) + ";" + kor + ";" + nem);
+
+                        if (radioButton.IsChecked == true)
+                        {
+                            nem = "Férfi";
+                            File.WriteAllText(file, person.Nev + ";" + person.Email + ";" + PassSec(person.Jelszo) + ";" + person.Kor + ";" + person.Nem);
+
+                        }
+                        else if (radioButton1.IsChecked == true)
+                        {
+                            nem = "Nő";
+                            File.WriteAllText(file, person.Nev + ";" + person.Email + ";" + PassSec(person.Jelszo) + ";" + person.Kor + ";" + person.Nem);
+                        }
 
                     }
-                    else if (radioButton1.IsChecked == true)
+                    else
                     {
-                        nem = "Nő";
-                        File.WriteAllText(file, fnev + ";" + email + ";" + PassSec(jelszo) + ";" + kor + ";" + nem);
+                        MessageBox.Show("Nem egyeznek a jelszavak");
                     }
-
                 }
                 else
                 {
-                    MessageBox.Show("Nem egyeznek a jelszavak");
+                    MessageBox.Show("A korban nem lehet betű!");
                 }
+
+
+
 
             }
             else
