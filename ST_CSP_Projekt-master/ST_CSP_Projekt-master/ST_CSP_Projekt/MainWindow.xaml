@@ -1,0 +1,19 @@
+﻿<Window x:Class="ST_CSP_Projekt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ST_CSP_Projekt"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="White">
+    <Grid>
+        <Button x:Name="button1" Content="Bejelentkezés" HorizontalAlignment="Left" Margin="314,334,0,0" VerticalAlignment="Top" Width="120" Height="39" Click="button_Click"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="372,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1" Content="Felhasználónév:" HorizontalAlignment="Left" Margin="263,155,0,0" VerticalAlignment="Top" Width="95"/>
+        <PasswordBox x:Name="passwordBox1" HorizontalAlignment="Left" Margin="372,196,0,0" VerticalAlignment="Top" Width="120" Height="27"/>
+        <Label x:Name="label1_Copy" Content="Jelszó:" HorizontalAlignment="Left" Margin="263,196,0,0" VerticalAlignment="Top" Width="83"/>
+        <Button x:Name="button2" Content="Kilépés" HorizontalAlignment="Left" Margin="626,337,0,0" VerticalAlignment="Top" Width="120" Height="36" Click="button2_Click"/>
+        <Label Content="Nincs még fiókod? Regisztrálj itt:" HorizontalAlignment="Left" Margin="54,262,0,0" VerticalAlignment="Top" Width="186"/>
+        <Button Content="Regisztráció" HorizontalAlignment="Left" Margin="102,293,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>
