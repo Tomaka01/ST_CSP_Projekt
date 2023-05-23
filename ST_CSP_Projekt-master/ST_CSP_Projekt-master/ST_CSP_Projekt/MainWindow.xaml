@@ -14,6 +14,6 @@
         <Label x:Name="label1_Copy" Content="Jelszó:" HorizontalAlignment="Left" Margin="263,196,0,0" VerticalAlignment="Top" Width="83"/>
         <Button x:Name="button2" Content="Kilépés" HorizontalAlignment="Left" Margin="626,337,0,0" VerticalAlignment="Top" Width="120" Height="36" Click="button2_Click"/>
         <Label Content="Nincs még fiókod? Regisztrálj itt:" HorizontalAlignment="Left" Margin="54,262,0,0" VerticalAlignment="Top" Width="186"/>
-        <Button Content="Regisztráció" HorizontalAlignment="Left" Margin="102,293,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="gomb" Content="Regisztráció" HorizontalAlignment="Left" Margin="102,293,0,0" VerticalAlignment="Top" Width="75" Click="gomb_Click"/>
     </Grid>
 </Window>

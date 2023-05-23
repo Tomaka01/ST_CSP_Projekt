@@ -48,6 +48,7 @@ namespace ST_CSP_Projekt
                     if (fajl[2] == passwordBox1.Password)
                     {
                         //igaz
+                        MessageBox.Show("OK!");
                     }
                     else
                     {
@@ -69,6 +70,12 @@ namespace ST_CSP_Projekt
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void gomb_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 w = new Window1();
+            w.Show();
         }
     }
 }

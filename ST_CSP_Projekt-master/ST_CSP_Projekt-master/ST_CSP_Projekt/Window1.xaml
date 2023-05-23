@@ -21,6 +21,6 @@
         <RadioButton x:Name="radioButton1" Content="Nő" HorizontalAlignment="Left" Margin="320,291,0,0" VerticalAlignment="Top" Width="42"/>
         <Label x:Name="label4" Content="Nem:" HorizontalAlignment="Left" Margin="211,248,0,0" VerticalAlignment="Top" Width="60"/>
         <Button x:Name="button" Content="Regisztrálás" HorizontalAlignment="Left" Margin="320,334,0,0" VerticalAlignment="Top" Width="120" Height="39" Click="button_Click"/>
-        <Button x:Name="button2" Content="Kilépés" HorizontalAlignment="Left" Margin="627,359,0,0" VerticalAlignment="Top" Width="120" Height="36" Click="button2_Click"/>
+        <Button x:Name="button3" Content="Vissza" HorizontalAlignment="Left" Margin="64,359,0,0" VerticalAlignment="Top" Width="120" Height="36" Click="button3_Click"/>
     </Grid>
 </Window>
