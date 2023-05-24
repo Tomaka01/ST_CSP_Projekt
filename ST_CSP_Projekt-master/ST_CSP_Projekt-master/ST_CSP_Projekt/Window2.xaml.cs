@@ -272,5 +272,10 @@ namespace ST_CSP_Projekt
             Kosar.Visibility = Visibility.Visible;
             Gridgombok.Visibility = Visibility.Hidden;
         }
+
+        private void rendeles_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
