@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ST_CSP_Projekt"
         mc:Ignorable="d"
-        Title="Window2" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Title="Window2" Height="1000" Width="1700">
     <Grid>
         <Button x:Name="etel1gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="109,128,0,0" VerticalAlignment="Top" Width="100" Height="35"/>
         <Button x:Name="etel2gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="336,128,0,0" VerticalAlignment="Top" Width="100" Height="35"/>
@@ -13,8 +14,9 @@
         <Button x:Name="etel4gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="109,301,0,0" VerticalAlignment="Top" Width="100" Height="35"/>
         <Button x:Name="etel5gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="336,301,0,0" VerticalAlignment="Top" Width="100" Height="35"/>
         <Button x:Name="etel6gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="566,301,0,0" VerticalAlignment="Top" Width="100" Height="35"/>
-        <Button x:Name="button" Content="&gt;" HorizontalAlignment="Left" Margin="731,215,0,0" VerticalAlignment="Top" Width="39" FontSize="24" Height="44"/>
-        <Button x:Name="button1" Content="Kosár" HorizontalAlignment="Left" Margin="695,27,0,0" VerticalAlignment="Top" Width="75" Height="29"/>
+        <Button x:Name="button" Content="&gt;" HorizontalAlignment="Left" Margin="731,215,0,0" VerticalAlignment="Top" Width="39" FontSize="24" Height="44" Click="button_Click"/>
+        <Button x:Name="button1" Content="Kosár" HorizontalAlignment="Left" Margin="695,27,0,0" VerticalAlignment="Top" Width="75" Height="29" Click="button1_Click"/>
+        <Button x:Name="kilepes" Content="Kilépés" HorizontalAlignment="Left" Margin="327,373,0,0" VerticalAlignment="Top" Width="120" Height="36" Click="button2_Click"/>
 
     </Grid>
 </Window>

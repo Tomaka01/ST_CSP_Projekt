@@ -15,31 +15,19 @@ using System.Windows.Shapes;
 namespace ST_CSP_Projekt
 {
     /// <summary>
-    /// Interaction logic for Window2.xaml
+    /// Interaction logic for Window4.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class Window4 : Window
     {
-        public Window2()
+        public Window4()
         {
             InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void button3_Click(object sender, RoutedEventArgs e)
         {
-            Window3 abaksz = new Window3();
-            abaksz.Show();
-            Close();
-        }
-
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            Window4 ablaksz = new Window4();
+            Window2 ablaksz = new Window2();
             ablaksz.Show();
-            Close();
-        }
-
-        private void button2_Click(object sender, RoutedEventArgs e)
-        {
             Close();
         }
     }

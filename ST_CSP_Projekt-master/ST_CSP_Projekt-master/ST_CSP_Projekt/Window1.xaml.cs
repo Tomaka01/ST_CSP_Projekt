@@ -131,6 +131,9 @@ namespace ST_CSP_Projekt
 
         private void button3_Click(object sender, RoutedEventArgs e)
         {
+
+            MainWindow abalksz = new MainWindow();
+            abalksz.Show();
             Close();
         }
     }

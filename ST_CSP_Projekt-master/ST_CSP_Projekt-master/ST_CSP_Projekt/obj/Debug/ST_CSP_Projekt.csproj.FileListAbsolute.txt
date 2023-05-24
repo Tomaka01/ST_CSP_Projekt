@@ -34,3 +34,7 @@ C:\Users\Tamás\Source\Repos\Tomaka01\ST_CSP_Projekt\ST_CSP_Projekt-master\ST_CS
 C:\Users\Tamás\Source\Repos\Tomaka01\ST_CSP_Projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\obj\Debug\ST_CSP_Projekt.pdb
 C:\Users\Tamás\Source\Repos\Tomaka01\ST_CSP_Projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\obj\Debug\Window2.g.cs
 C:\Users\Tamás\Source\Repos\Tomaka01\ST_CSP_Projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\obj\Debug\Window2.baml
+C:\Users\Tamás\Source\Repos\Tomaka01\ST_CSP_Projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\obj\Debug\Window3.g.cs
+C:\Users\Tamás\Source\Repos\Tomaka01\ST_CSP_Projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\obj\Debug\Window3.baml
+C:\Users\Tamás\Source\Repos\Tomaka01\ST_CSP_Projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\obj\Debug\Window4.g.cs
+C:\Users\Tamás\Source\Repos\Tomaka01\ST_CSP_Projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\obj\Debug\Window4.baml
