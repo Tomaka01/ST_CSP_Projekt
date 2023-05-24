@@ -69,15 +69,20 @@ namespace ST_CSP_Projekt
                                         if (radioButton.IsChecked == true)
                                         {
                                             nem = "Férfi";
-                                            File.WriteAllText(file, person.Nev + ";" + person.Email + ";" + PassSec(person.Jelszo) + ";" + person.Kor + ";" + person.Nem);
+                                            File.WriteAllText(file, person.Nev + ";" + person.Email + ";" + PassSec(person.Jelszo) + ";" + person.Kor + ";" + nem);
                                             MessageBox.Show("Sikeres regisztráció!");
-
+                                            MainWindow w = new MainWindow();
+                                            w.Show();
+                                            Close();
                                         }
                                         else if (radioButton1.IsChecked == true)
                                         {
                                             nem = "Nő";
-                                            File.WriteAllText(file, person.Nev + ";" + person.Email + ";" + PassSec(person.Jelszo) + ";" + person.Kor + ";" + person.Nem);
+                                            File.WriteAllText(file, person.Nev + ";" + person.Email + ";" + PassSec(person.Jelszo) + ";" + person.Kor + ";" + nem);
                                             MessageBox.Show("Sikeres regisztráció!");
+                                            MainWindow w = new MainWindow();
+                                            w.Show();
+                                            Close();
                                         }
                                     }
                                     else

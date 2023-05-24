@@ -8,7 +8,7 @@
         WindowStartupLocation="CenterScreen"
         Title="Window2" Height="1000" Width="1700">
     <Grid>
-        <Button x:Name="etel1gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="109,128,0,0" VerticalAlignment="Top" Width="100" Height="35"/>
+        <Button x:Name="etel1gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="109,128,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel1gomb_Click"/>
         <Button x:Name="etel2gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="336,128,0,0" VerticalAlignment="Top" Width="100" Height="35"/>
         <Button x:Name="etel3gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="566,128,0,0" VerticalAlignment="Top" Width="100" Height="35"/>
         <Button x:Name="etel4gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="109,301,0,0" VerticalAlignment="Top" Width="100" Height="35"/>

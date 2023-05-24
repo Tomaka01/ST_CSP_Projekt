@@ -19,6 +19,7 @@ namespace ST_CSP_Projekt
     /// </summary>
     public partial class Window2 : Window
     {
+        public List<string> foods = new List<string>();
         public Window2()
         {
             InitializeComponent();
@@ -41,6 +42,11 @@ namespace ST_CSP_Projekt
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void etel1gomb_Click(object sender, RoutedEventArgs e)
+        {
+            foods.Add("");
         }
     }
 }
