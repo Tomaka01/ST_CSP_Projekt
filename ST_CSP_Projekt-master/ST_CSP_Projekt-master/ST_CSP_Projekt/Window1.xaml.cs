@@ -64,7 +64,7 @@ namespace ST_CSP_Projekt
                             {
                                 if (person.Jelszo.Length>=8)
                                 {
-                                    if (person.Jelszo.Contains("$")==true | person.Jelszo.Contains("%") == true | person.Jelszo.Contains("#") == true | person.Jelszo.Contains("*") == true)
+                                    if (person.Jelszo.Contains("$")==true | person.Jelszo.Contains("%") == true | person.Jelszo.Contains("#") == true | person.Jelszo.Contains("*") == true | person.Jelszo.Contains(".") == true)
                                     {
                                         if (radioButton.IsChecked == true)
                                         {
@@ -82,7 +82,7 @@ namespace ST_CSP_Projekt
                                     }
                                     else
                                     {
-                                        MessageBox.Show("A jelszónak tartalmaznia kell valamilyen különleges karaktert!($ % # *)");
+                                        MessageBox.Show("A jelszónak tartalmaznia kell valamilyen különleges karaktert!($ % # * .)");
                                     }
 
                                 }
