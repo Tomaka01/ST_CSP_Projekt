@@ -23,6 +23,7 @@ namespace ST_CSP_Projekt
         public Window1()
         {
             InitializeComponent();
+            textBox.Focus();
         }
 
         static string PassSec(string pass)
@@ -58,7 +59,7 @@ namespace ST_CSP_Projekt
                     if (jelszo == jelszo1)
 
                     {
-                        if (person.Email.Contains("@")==true)
+                        if (person.Email.Contains("@")==true | person.Email.Contains(".")==true)
                         {
                             if (person.Kor<100)
                             {
@@ -106,7 +107,7 @@ namespace ST_CSP_Projekt
                         }
                         else
                         {
-                            MessageBox.Show("Az email cím nem tartalmaz @-ot!");
+                            MessageBox.Show("Az email cím nem tartalmaz @ vagy .-ot!");
                         }
 
 

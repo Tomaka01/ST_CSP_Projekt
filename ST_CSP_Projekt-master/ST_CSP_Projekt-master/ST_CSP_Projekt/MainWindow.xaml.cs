@@ -22,6 +22,7 @@ namespace ST_CSP_Projekt
         public MainWindow()
         {
             InitializeComponent();
+            textBox1.Focus();
         }
 
         static string PassSec(string pass)
