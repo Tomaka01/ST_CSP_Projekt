@@ -58,20 +58,52 @@ namespace ST_CSP_Projekt
                     if (jelszo == jelszo1)
 
                     {
-
-                        if (radioButton.IsChecked == true)
+                        if (person.Email.Contains("@")==true)
                         {
-                            nem = "Férfi";
-                            File.WriteAllText(file, person.Nev + ";" + person.Email + ";" + PassSec(person.Jelszo) + ";" + person.Kor + ";" + person.Nem);
-                            MessageBox.Show("Sikeres regisztráció!");
+                            if (person.Kor<100)
+                            {
+                                if (person.Jelszo.Length>=8)
+                                {
+                                    if (person.Jelszo.Contains("$")==true | person.Jelszo.Contains("%") == true | person.Jelszo.Contains("#") == true | person.Jelszo.Contains("*") == true)
+                                    {
+                                        if (radioButton.IsChecked == true)
+                                        {
+                                            nem = "Férfi";
+                                            File.WriteAllText(file, person.Nev + ";" + person.Email + ";" + PassSec(person.Jelszo) + ";" + person.Kor + ";" + person.Nem);
+                                            MessageBox.Show("Sikeres regisztráció!");
+
+                                        }
+                                        else if (radioButton1.IsChecked == true)
+                                        {
+                                            nem = "Nő";
+                                            File.WriteAllText(file, person.Nev + ";" + person.Email + ";" + PassSec(person.Jelszo) + ";" + person.Kor + ";" + person.Nem);
+                                            MessageBox.Show("Sikeres regisztráció!");
+                                        }
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("A jelszónak tartalmaznia kell valamilyen különleges karaktert!($ % # *)");
+                                    }
+
+                                }
+                                else
+                                {
+                                    MessageBox.Show("A jelszónak legalább 8 karakterből kell állnia!");
+                                }
+
+                            }
+                            else
+                            {
+                                MessageBox.Show("A kor nem lehet nagyobb 100-nál!");
+                            }
+
 
                         }
-                        else if (radioButton1.IsChecked == true)
+                        else
                         {
-                            nem = "Nő";
-                            File.WriteAllText(file, person.Nev + ";" + person.Email + ";" + PassSec(person.Jelszo) + ";" + person.Kor + ";" + person.Nem);
-                            MessageBox.Show("Sikeres regisztráció!");
+                            MessageBox.Show("Az email cím nem tartalmaz @-ot!");
                         }
+
 
                     }
                     else

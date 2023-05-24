@@ -45,10 +45,12 @@ namespace ST_CSP_Projekt
                 {
                     string x = File.ReadAllText(nev + ".txt");
                     string[] fajl = x.Split(';');
-                    if (fajl[2] == passwordBox1.Password)
+                    if (fajl[2] == PassSec(passwordBox1.Password))
                     {
-                        //igaz
-                        MessageBox.Show("OK!");
+                        MessageBox.Show("Sikeres bejelentkezés!");
+                        Window2 ablak = new Window2();
+                        ablak.Show();
+                        Close();
                     }
                     else
                     {
@@ -76,6 +78,7 @@ namespace ST_CSP_Projekt
         {
             Window1 w = new Window1();
             w.Show();
+            Close();
         }
     }
 }

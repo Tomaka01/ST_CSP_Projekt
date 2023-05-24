@@ -1,0 +1,20 @@
+﻿<Window x:Class="ST_CSP_Projekt.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ST_CSP_Projekt"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="etel1gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="109,128,0,0" VerticalAlignment="Top" Width="100" Height="35"/>
+        <Button x:Name="etel2gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="336,128,0,0" VerticalAlignment="Top" Width="100" Height="35"/>
+        <Button x:Name="etel3gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="566,128,0,0" VerticalAlignment="Top" Width="100" Height="35"/>
+        <Button x:Name="etel4gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="109,301,0,0" VerticalAlignment="Top" Width="100" Height="35"/>
+        <Button x:Name="etel5gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="336,301,0,0" VerticalAlignment="Top" Width="100" Height="35"/>
+        <Button x:Name="etel6gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="566,301,0,0" VerticalAlignment="Top" Width="100" Height="35"/>
+        <Button x:Name="button" Content="&gt;" HorizontalAlignment="Left" Margin="731,215,0,0" VerticalAlignment="Top" Width="39" FontSize="24" Height="44"/>
+        <Button x:Name="button1" Content="Kosár" HorizontalAlignment="Left" Margin="695,27,0,0" VerticalAlignment="Top" Width="75" Height="29"/>
+
+    </Grid>
+</Window>
