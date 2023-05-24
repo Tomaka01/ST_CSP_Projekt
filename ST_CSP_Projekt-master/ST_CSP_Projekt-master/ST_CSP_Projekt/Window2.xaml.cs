@@ -25,18 +25,21 @@ namespace ST_CSP_Projekt
             InitializeComponent();
             Gridgomb.Visibility = Visibility.Visible;
             Kosar.Visibility = Visibility.Hidden;
+            Gridgombok.Visibility = Visibility.Hidden;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-
+            Gridgomb.Visibility = Visibility.Hidden;
+            Kosar.Visibility = Visibility.Hidden;
+            Gridgombok.Visibility = Visibility.Visible;
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             Gridgomb.Visibility = Visibility.Hidden;
             Kosar.Visibility = Visibility.Visible;
-
+            Gridgombok.Visibility = Visibility.Hidden;
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
@@ -82,6 +85,8 @@ namespace ST_CSP_Projekt
         {
             Gridgomb.Visibility = Visibility.Visible;
             Kosar.Visibility = Visibility.Hidden;
+            Gridgombok.Visibility = Visibility.Hidden;
+
         }
 
         private void etel3gomb_Click(object sender, RoutedEventArgs e)
@@ -145,11 +150,127 @@ namespace ST_CSP_Projekt
             {
                 if (etel6 > 1)
                 {
-                    etelkosar.Items.Remove("Sült csirke " + (etel6 - 1) + " db " + ((4000 * etel6) - 4000) + "Ft" + "\t");
+                    etelkosar.Items.Remove("Sült csirke " + (etel6 - 1) + " db " + ((4200 * etel6) - 4200) + "Ft" + "\t");
                 }
-                etelkosar.Items.Add("Sült csirke " + etel6 + " db " + (4000 * etel6) + "Ft" + "\t");
+                etelkosar.Items.Add("Sült csirke " + etel6 + " db " + (4200 * etel6) + "Ft" + "\t");
 
             }
+        }
+
+        private void etel7gomb_Click(object sender, RoutedEventArgs e)
+        {
+            foods.Add("Sushi tacos");
+            MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
+            int etel7 = 0;
+            etel7 = foods.Count(x => x == "Sushi tacos");
+            if (etel7 > 0)
+            {
+                if (etel7 > 1)
+                {
+                    etelkosar.Items.Remove("Sushi tacos " + (etel7 - 1) + " db " + ((1700 * etel7) - 1700) + "Ft" + "\t");
+                }
+                etelkosar.Items.Add("Sushi tacos " + etel7 + " db " + (1700 * etel7) + "Ft" + "\t");
+
+            }
+        }
+
+        private void etel8gomb_Click(object sender, RoutedEventArgs e)
+        {
+            foods.Add("Padlizsán parmezán");
+            MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
+            int etel8 = 0;
+            etel8 = foods.Count(x => x == "Padlizsán parmezán");
+            if (etel8 > 0)
+            {
+                if (etel8 > 1)
+                {
+                    etelkosar.Items.Remove("Padlizsán parmezán " + (etel8 - 1) + " db " + ((3100 * etel8) - 3100) + "Ft" + "\t");
+                }
+                etelkosar.Items.Add("Padlizsán parmezán " + etel8 + " db " + (3100 * etel8) + "Ft" + "\t");
+
+            }
+        }
+
+        private void etel9gomb_Click(object sender, RoutedEventArgs e)
+        {
+            foods.Add("Biryani");
+            MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
+            int etel9 = 0;
+            etel9 = foods.Count(x => x == "Biryani");
+            if (etel9 > 0)
+            {
+                if (etel9 > 1)
+                {
+                    etelkosar.Items.Remove("Biryani " + (etel9 - 1) + " db " + ((3600 * etel9) - 3600) + "Ft" + "\t");
+                }
+                etelkosar.Items.Add("Biryani " + etel9 + " db " + (3600 * etel9) + "Ft" + "\t");
+
+            }
+        }
+
+        private void etel10gomb_Click(object sender, RoutedEventArgs e)
+        {
+            foods.Add("Ramen");
+            MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
+            int etel10 = 0;
+            etel10 = foods.Count(x => x == "Ramen");
+            if (etel10 > 0)
+            {
+                if (etel10 > 1)
+                {
+                    etelkosar.Items.Remove("Ramen " + (etel10 - 1) + " db " + ((2500 * etel10) - 2500) + "Ft" + "\t");
+                }
+                etelkosar.Items.Add("Ramen " + etel10 + " db " + (2500 * etel10) + "Ft" + "\t");
+
+            }
+        }
+
+        private void etel11gomb_Click(object sender, RoutedEventArgs e)
+        {
+            foods.Add("Omelette");
+            MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
+            int etel11 = 0;
+            etel11 = foods.Count(x => x == "Omelette");
+            if (etel11 > 0)
+            {
+                if (etel11 > 1)
+                {
+                    etelkosar.Items.Remove("Omelette " + (etel11 - 1) + " db " + ((1000 * etel11) - 1000) + "Ft" + "\t");
+                }
+                etelkosar.Items.Add("Omelette " + etel11 + " db " + (1000 * etel11) + "Ft" + "\t");
+
+            }
+        }
+
+        private void etel12gomb_Click(object sender, RoutedEventArgs e)
+        {
+            foods.Add("Pogácsa");
+            MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
+            int etel12 = 0;
+            etel12 = foods.Count(x => x == "Pogácsa");
+            if (etel12 > 0)
+            {
+                if (etel12 > 1)
+                {
+                    etelkosar.Items.Remove("Pogácsa " + (etel12 - 1) + " db " + ((500 * etel12) - 500) + "Ft" + "\t");
+                }
+                etelkosar.Items.Add("Pogácsa " + etel12 + " db " + (500 * etel12) + "Ft" + "\t");
+
+            }
+        }
+
+        private void buttonn_Click(object sender, RoutedEventArgs e)
+        {
+            Gridgomb.Visibility = Visibility.Visible;
+            Kosar.Visibility = Visibility.Hidden;
+            Gridgombok.Visibility = Visibility.Hidden;
+        }
+
+        private void buttonn1_Click(object sender, RoutedEventArgs e)
+        {
+            Gridgomb.Visibility = Visibility.Hidden;
+            Kosar.Visibility = Visibility.Visible;
+            Gridgombok.Visibility = Visibility.Hidden;
         }
     }
 }
