@@ -20,6 +20,8 @@ namespace ST_CSP_Projekt
     public partial class Window2 : Window
     {
         public List<string> foods = new List<string>();
+        public int osszegdb = 0;
+        public int osszeg = 0;
         public Window2()
         {
             InitializeComponent();
@@ -35,8 +37,10 @@ namespace ST_CSP_Projekt
             Gridgombok.Visibility = Visibility.Visible;
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void kosar_Click(object sender, RoutedEventArgs e)
         {
+
+            osszegg.Text = "Végösszeg: " + osszeg + " Ft \t" +"Termékek száma: "+ osszegdb + " db";
             Gridgomb.Visibility = Visibility.Hidden;
             Kosar.Visibility = Visibility.Visible;
             Gridgombok.Visibility = Visibility.Hidden;
@@ -49,6 +53,8 @@ namespace ST_CSP_Projekt
 
         private void etel1gomb_Click(object sender, RoutedEventArgs e)
         {
+            osszegdb++;
+            osszeg += 2300;
             foods.Add("Pizza");
             MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
             int etel1 = 0;
@@ -66,6 +72,8 @@ namespace ST_CSP_Projekt
 
         private void etel2gomb_Click(object sender, RoutedEventArgs e)
         {
+            osszegdb++;
+            osszeg += 2000;
             foods.Add("Hamburger");
             MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
             int etel2 = 0;
@@ -91,6 +99,8 @@ namespace ST_CSP_Projekt
 
         private void etel3gomb_Click(object sender, RoutedEventArgs e)
         {
+            osszegdb++;
+            osszeg += 3000;
             foods.Add("Sushi");
             MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
             int etel3 = 0;
@@ -108,6 +118,8 @@ namespace ST_CSP_Projekt
 
         private void etel4gomb_Click(object sender, RoutedEventArgs e)
         {
+            osszegdb++;
+            osszeg += 3200;
             foods.Add("Thai curry");
             MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
             int etel4 = 0;
@@ -125,6 +137,8 @@ namespace ST_CSP_Projekt
 
         private void etel5gomb_Click(object sender, RoutedEventArgs e)
         {
+            osszegdb++;
+            osszeg += 2200;
             foods.Add("Tacos");
             MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
             int etel5 = 0;
@@ -142,6 +156,8 @@ namespace ST_CSP_Projekt
 
         private void etel6gomb_Click(object sender, RoutedEventArgs e)
         {
+            osszegdb++;
+            osszeg += 4200;
             foods.Add("Sült csirke");
             MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
             int etel6 = 0;
@@ -159,6 +175,8 @@ namespace ST_CSP_Projekt
 
         private void etel7gomb_Click(object sender, RoutedEventArgs e)
         {
+            osszegdb++;
+            osszeg += 1700;
             foods.Add("Sushi tacos");
             MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
             int etel7 = 0;
@@ -176,6 +194,8 @@ namespace ST_CSP_Projekt
 
         private void etel8gomb_Click(object sender, RoutedEventArgs e)
         {
+            osszegdb++;
+            osszeg += 3100;
             foods.Add("Padlizsán parmezán");
             MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
             int etel8 = 0;
@@ -193,6 +213,8 @@ namespace ST_CSP_Projekt
 
         private void etel9gomb_Click(object sender, RoutedEventArgs e)
         {
+            osszegdb++;
+            osszeg += 3600;
             foods.Add("Biryani");
             MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
             int etel9 = 0;
@@ -210,6 +232,8 @@ namespace ST_CSP_Projekt
 
         private void etel10gomb_Click(object sender, RoutedEventArgs e)
         {
+            osszegdb++;
+            osszeg += 2500;
             foods.Add("Ramen");
             MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
             int etel10 = 0;
@@ -227,6 +251,8 @@ namespace ST_CSP_Projekt
 
         private void etel11gomb_Click(object sender, RoutedEventArgs e)
         {
+            osszegdb++;
+            osszeg += 1000;
             foods.Add("Omelette");
             MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
             int etel11 = 0;
@@ -244,6 +270,8 @@ namespace ST_CSP_Projekt
 
         private void etel12gomb_Click(object sender, RoutedEventArgs e)
         {
+            osszegdb++;
+            osszeg += 500;
             foods.Add("Pogácsa");
             MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
             int etel12 = 0;

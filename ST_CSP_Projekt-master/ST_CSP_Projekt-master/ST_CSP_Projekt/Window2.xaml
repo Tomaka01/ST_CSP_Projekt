@@ -8,10 +8,23 @@
         WindowStartupLocation="CenterScreen"
         Title="Window2" Height="1000" Width="1700">
     <Grid Height="881">
-        <Grid x:Name="Kosar" Height="881" Width="1692" Grid.ColumnSpan="2">
-            <ListBox x:Name="etelkosar" HorizontalAlignment="Left" Height="226" Margin="79,96,0,0" VerticalAlignment="Top" Width="220"/>
-            <Button x:Name="button2" Content="Vissza" HorizontalAlignment="Left" Margin="79,355,0,0" VerticalAlignment="Top" Width="111" Height="53" Click="button2_Click_1"/>
-            <Button x:Name="rendeles" Content="Rendelés&#xD;&#xA;leadása" HorizontalAlignment="Left" Margin="547,355,0,0" VerticalAlignment="Top" Width="111" Height="53" Click="rendeles_Click"/>
+        <Grid x:Name="Kosar" Height="881" Width="1692">
+            <ListBox x:Name="etelkosar" HorizontalAlignment="Left" Height="226" Margin="79,33,0,0" VerticalAlignment="Top" Width="220"/>
+            <Button x:Name="button2" Content="Vissza" HorizontalAlignment="Left" Margin="138,522,0,0" VerticalAlignment="Top" Width="111" Height="53" Click="button2_Click_1"/>
+            <Button x:Name="rendeles" Content="Rendelés&#xD;&#xA;leadása" HorizontalAlignment="Left" Margin="513,355,0,0" VerticalAlignment="Top" Width="111" Height="53" Click="rendeles_Click"/>
+            <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="538,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="538,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="538,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label x:Name="label" Content="Település:" HorizontalAlignment="Left" Margin="454,96,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="label1" Content="Irányítószám:" HorizontalAlignment="Left" Margin="453,133,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="label2" Content="Utca:" HorizontalAlignment="Left" Margin="478,178,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" Margin="538,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label x:Name="label3" Content="Házszám/emelet:" HorizontalAlignment="Left" Margin="433,222,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="radioButton" Content="Készpénz" HorizontalAlignment="Left" Margin="513,283,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="radioButton1" Content="Bankkártya" HorizontalAlignment="Left" Margin="606,283,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="label4" Content="Fizetési mód:" HorizontalAlignment="Left" Margin="404,277,0,0" VerticalAlignment="Top"/>
+            <TextBlock x:Name="osszegg" HorizontalAlignment="Left" Margin="10,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365" Height="125"/>
+            <Label x:Name="label5" Content="Összesen:" HorizontalAlignment="Left" Margin="10,259,0,0" VerticalAlignment="Top"/>
 
         </Grid>
         <Grid x:Name="Gridgomb" Margin="0,88,0,-88" Height="881" Width="1692" Grid.ColumnSpan="2" Visibility="Hidden">
@@ -22,7 +35,7 @@
             <Button x:Name="etel5gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="336,301,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel5gomb_Click"/>
             <Button x:Name="etel6gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="566,301,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel6gomb_Click"/>
             <Button x:Name="button" Content="&gt;" HorizontalAlignment="Left" Margin="731,215,0,0" VerticalAlignment="Top" Width="39" FontSize="24" Height="44" Click="button_Click"/>
-            <Button x:Name="button1" Content="Kosár" HorizontalAlignment="Left" Margin="695,27,0,0" VerticalAlignment="Top" Width="75" Height="29" Click="button1_Click"/>
+            <Button x:Name="kosar" Content="Kosár" HorizontalAlignment="Left" Margin="695,27,0,0" VerticalAlignment="Top" Width="75" Height="29" Click="kosar_Click"/>
             <Button x:Name="kilepes" Content="Kilépés" HorizontalAlignment="Left" Margin="327,373,0,0" VerticalAlignment="Top" Width="120" Height="36" Click="button2_Click"/>
 
         </Grid>
