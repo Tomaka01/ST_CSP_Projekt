@@ -10,7 +10,7 @@
     <Grid Height="881">
         <Grid x:Name="Kosar" Height="881" Width="1692">
             <ListBox x:Name="etelkosar" HorizontalAlignment="Left" Height="226" Margin="79,33,0,0" VerticalAlignment="Top" Width="220"/>
-            <Button x:Name="button2" Content="Vissza" HorizontalAlignment="Left" Margin="138,522,0,0" VerticalAlignment="Top" Width="111" Height="53" Click="button2_Click_1"/>
+            <Button x:Name="button2" Content="Vissza" HorizontalAlignment="Left" Margin="131,453,0,0" VerticalAlignment="Top" Width="111" Height="53" Click="button2_Click_1"/>
             <Button x:Name="rendeles" Content="Rendelés&#xD;&#xA;leadása" HorizontalAlignment="Left" Margin="513,355,0,0" VerticalAlignment="Top" Width="111" Height="53" Click="rendeles_Click"/>
             <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="538,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
             <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="538,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>

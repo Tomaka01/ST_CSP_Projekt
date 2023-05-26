@@ -303,6 +303,42 @@ namespace ST_CSP_Projekt
 
         private void rendeles_Click(object sender, RoutedEventArgs e)
         {
+            int iranyito1 = 0;
+            string iranyito = textBox1.Text;
+            int hazszam1 = 0;
+            string hazszam = textBox3.Text;
+            if (textBox.Text!="" & textBox1.Text!="" & textBox2.Text!="" & textBox3.Text!="" & radioButton.IsChecked==true | radioButton1.IsChecked==true)
+            {
+                if (int.TryParse(iranyito, out iranyito1))
+                {
+                    if (int.TryParse(hazszam, out hazszam1))
+                    {
+                        if (textBox1.Text.Length == 4)
+                        {
+                            MessageBox.Show("A rendelés leadva!");
+                            Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Az irányítószám 4 karakterből kell hogy álljon!");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ez a mező csak számot tartalmazhat!");
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Az irányítószámban nem lehet betű!");
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Nincsenek adatok megadva!");
+            }
 
         }
     }
