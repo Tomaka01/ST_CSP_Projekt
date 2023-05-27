@@ -342,5 +342,21 @@ namespace ST_CSP_Projekt
             }
 
         }
+
+        private void delete_Click(object sender, RoutedEventArgs e)
+        {
+            if (etelkosar.Items.Contains("Pizza"+osszegdb+osszeg))
+            {
+                osszeg -= 2300;
+                osszegdb--;
+                var selectedItems = etelkosar.SelectedItems.Cast<object>().ToList();
+                foreach (var selectedItem in selectedItems)
+                {
+                    etelkosar.Items.Remove(selectedItem);
+                }
+                osszegg.Text = "Végösszeg: " + osszeg + " Ft \t" + "Termékek száma: " + osszegdb + " db";
+            }
+
+        }
     }
 }
