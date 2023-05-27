@@ -345,7 +345,7 @@ namespace ST_CSP_Projekt
 
         private void delete_Click(object sender, RoutedEventArgs e)
         {
-            if (etelkosar.Items.Contains("Pizza"+osszegdb+osszeg))
+            if (etelkosar.Items.Contains("Pizza " + osszegdb + " db " + osszeg + "Ft" + "\t"))
             {
                 osszeg -= 2300;
                 osszegdb--;
@@ -355,6 +355,10 @@ namespace ST_CSP_Projekt
                     etelkosar.Items.Remove(selectedItem);
                 }
                 osszegg.Text = "Végösszeg: " + osszeg + " Ft \t" + "Termékek száma: " + osszegdb + " db";
+            }
+            else
+            {
+                MessageBox.Show("Nem");
             }
 
         }
