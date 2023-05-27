@@ -8,7 +8,7 @@
         WindowStartupLocation="CenterScreen"
         Title="Window2" Height="1000" Width="1700">
     <Grid Height="881">
-        <Grid x:Name="Kosar" Height="881" Width="1692">
+        <Grid x:Name="Kosar" Height="881" Width="1692" Visibility="Hidden">
             <ListBox x:Name="etelkosar" HorizontalAlignment="Left" Height="226" Margin="79,33,0,0" VerticalAlignment="Top" Width="220"/>
             <Button x:Name="button2" Content="Vissza" HorizontalAlignment="Left" Margin="131,453,0,0" VerticalAlignment="Top" Width="111" Height="53" Click="button2_Click_1"/>
             <Button x:Name="rendeles" Content="Rendelés&#xD;&#xA;leadása" HorizontalAlignment="Left" Margin="513,355,0,0" VerticalAlignment="Top" Width="111" Height="53" Click="rendeles_Click"/>
@@ -27,7 +27,7 @@
             <Label x:Name="label5" Content="Összesen:" HorizontalAlignment="Left" Margin="10,259,0,0" VerticalAlignment="Top"/>
 
         </Grid>
-        <Grid x:Name="Gridgomb" Margin="0,88,0,-88" Height="881" Width="1692" Grid.ColumnSpan="2" Visibility="Hidden">
+        <Grid x:Name="Gridgomb" Margin="0,88,0,-88" Height="881" Width="1692" Grid.ColumnSpan="2">
             <Button x:Name="etel1gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="109,128,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel1gomb_Click"/>
             <Button x:Name="etel2gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="336,128,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel2gomb_Click"/>
             <Button x:Name="etel3gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="566,128,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel3gomb_Click"/>
@@ -39,7 +39,7 @@
             <Button x:Name="kilepes" Content="Kilépés" HorizontalAlignment="Left" Margin="327,373,0,0" VerticalAlignment="Top" Width="120" Height="36" Click="button2_Click"/>
 
         </Grid>
-        <Grid x:Name="Gridgombok" Margin="0,88,0,-88" Height="881" Width="1692" Grid.ColumnSpan="2" Visibility="Hidden">
+        <Grid x:Name="Gridgombok" Margin="0,88,0,-88" Height="881" Width="1692" Grid.ColumnSpan="2">
             <Button x:Name="etel7gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="109,128,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel7gomb_Click"/>
             <Button x:Name="etel8gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="336,128,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel8gomb_Click"/>
             <Button x:Name="etel9gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="566,128,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel9gomb_Click"/>

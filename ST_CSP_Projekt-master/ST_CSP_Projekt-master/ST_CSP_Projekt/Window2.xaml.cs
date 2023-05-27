@@ -296,6 +296,7 @@ namespace ST_CSP_Projekt
 
         private void buttonn1_Click(object sender, RoutedEventArgs e)
         {
+            osszegg.Text = "Végösszeg: " + osszeg + " Ft \t" + "Termékek száma: " + osszegdb + " db";
             Gridgomb.Visibility = Visibility.Hidden;
             Kosar.Visibility = Visibility.Visible;
             Gridgombok.Visibility = Visibility.Hidden;
