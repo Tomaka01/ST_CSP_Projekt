@@ -42,7 +42,6 @@ namespace ST_CSP_Projekt
 
         private void kosar_Click(object sender, RoutedEventArgs e)
         {
-
             osszegg.Text = "Végösszeg: " + osszeg + " Ft \t" +"Termékek száma: "+ osszegdb + " db";
             Gridgomb.Visibility = Visibility.Hidden;
             Kosar.Visibility = Visibility.Visible;
@@ -50,7 +49,7 @@ namespace ST_CSP_Projekt
             Logo.Visibility = Visibility.Visible;
         }
 
-        private void button2_Click(object sender, RoutedEventArgs e)
+        private void shop2_kilepes_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
@@ -182,17 +181,17 @@ namespace ST_CSP_Projekt
         {
             osszegdb++;
             osszeg += 1700;
-            foods.Add("Sushi tacos");
+            foods.Add("Bolognai Spaghetti");
             MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
             int etel7 = 0;
-            etel7 = foods.Count(x => x == "Sushi tacos");
+            etel7 = foods.Count(x => x == "Bolognai Spaghetti");
             if (etel7 > 0)
             {
                 if (etel7 > 1)
                 {
-                    etelkosar.Items.Remove("Sushi tacos " + (etel7 - 1) + " db " + ((1700 * etel7) - 1700) + "Ft" + "\t");
+                    etelkosar.Items.Remove("Bolognai Spaghetti " + (etel7 - 1) + " db " + ((1700 * etel7) - 1700) + "Ft" + "\t");
                 }
-                etelkosar.Items.Add("Sushi tacos " + etel7 + " db " + (1700 * etel7) + "Ft" + "\t");
+                etelkosar.Items.Add("Bolognai Spaghetti " + etel7 + " db " + (1700 * etel7) + "Ft" + "\t");
 
             }
         }
@@ -200,18 +199,18 @@ namespace ST_CSP_Projekt
         private void etel8gomb_Click(object sender, RoutedEventArgs e)
         {
             osszegdb++;
-            osszeg += 3100;
-            foods.Add("Padlizsán parmezán");
+            osszeg += 1500;
+            foods.Add("Gyros Pita");
             MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
             int etel8 = 0;
-            etel8 = foods.Count(x => x == "Padlizsán parmezán");
+            etel8 = foods.Count(x => x == "Gyros Pita");
             if (etel8 > 0)
             {
                 if (etel8 > 1)
                 {
-                    etelkosar.Items.Remove("Padlizsán parmezán " + (etel8 - 1) + " db " + ((3100 * etel8) - 3100) + "Ft" + "\t");
+                    etelkosar.Items.Remove("Gyros Pita " + (etel8 - 1) + " db " + ((1500 * etel8) - 1500) + "Ft" + "\t");
                 }
-                etelkosar.Items.Add("Padlizsán parmezán " + etel8 + " db " + (3100 * etel8) + "Ft" + "\t");
+                etelkosar.Items.Add("Gyros Pita " + etel8 + " db " + (1500 * etel8) + "Ft" + "\t");
 
             }
         }
@@ -238,18 +237,18 @@ namespace ST_CSP_Projekt
         private void etel10gomb_Click(object sender, RoutedEventArgs e)
         {
             osszegdb++;
-            osszeg += 2500;
-            foods.Add("Ramen");
+            osszeg += 800;
+            foods.Add("Coca Cola");
             MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
             int etel10 = 0;
-            etel10 = foods.Count(x => x == "Ramen");
+            etel10 = foods.Count(x => x == "Coca Cola");
             if (etel10 > 0)
             {
                 if (etel10 > 1)
                 {
-                    etelkosar.Items.Remove("Ramen " + (etel10 - 1) + " db " + ((2500 * etel10) - 2500) + "Ft" + "\t");
+                    etelkosar.Items.Remove("Coca Cola " + (etel10 - 1) + " db " + ((800 * etel10) - 800) + "Ft" + "\t");
                 }
-                etelkosar.Items.Add("Ramen " + etel10 + " db " + (2500 * etel10) + "Ft" + "\t");
+                etelkosar.Items.Add("Coca Cola " + etel10 + " db " + (800 * etel10) + "Ft" + "\t");
 
             }
         }
@@ -257,18 +256,18 @@ namespace ST_CSP_Projekt
         private void etel11gomb_Click(object sender, RoutedEventArgs e)
         {
             osszegdb++;
-            osszeg += 1000;
-            foods.Add("Omelette");
+            osszeg += 800;
+            foods.Add("Sprite");
             MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
             int etel11 = 0;
-            etel11 = foods.Count(x => x == "Omelette");
+            etel11 = foods.Count(x => x == "Sprite");
             if (etel11 > 0)
             {
                 if (etel11 > 1)
                 {
-                    etelkosar.Items.Remove("Omelette " + (etel11 - 1) + " db " + ((1000 * etel11) - 1000) + "Ft" + "\t");
+                    etelkosar.Items.Remove("Sprite " + (etel11 - 1) + " db " + ((800 * etel11) - 800) + "Ft" + "\t");
                 }
-                etelkosar.Items.Add("Omelette " + etel11 + " db " + (1000 * etel11) + "Ft" + "\t");
+                etelkosar.Items.Add("Sprite " + etel11 + " db " + (800 * etel11) + "Ft" + "\t");
 
             }
         }
@@ -277,22 +276,22 @@ namespace ST_CSP_Projekt
         {
             osszegdb++;
             osszeg += 500;
-            foods.Add("Pogácsa");
+            foods.Add("Ásványvíz");
             MessageBox.Show("A termék hozzá lett adva a kosárhoz!");
             int etel12 = 0;
-            etel12 = foods.Count(x => x == "Pogácsa");
+            etel12 = foods.Count(x => x == "Ásványvíz");
             if (etel12 > 0)
             {
                 if (etel12 > 1)
                 {
-                    etelkosar.Items.Remove("Pogácsa " + (etel12 - 1) + " db " + ((500 * etel12) - 500) + "Ft" + "\t");
+                    etelkosar.Items.Remove("Ásványvíz " + (etel12 - 1) + " db " + ((500 * etel12) - 500) + "Ft" + "\t");
                 }
-                etelkosar.Items.Add("Pogácsa " + etel12 + " db " + (500 * etel12) + "Ft" + "\t");
+                etelkosar.Items.Add("Ásványvíz " + etel12 + " db " + (500 * etel12) + "Ft" + "\t");
 
             }
         }
 
-        private void buttonn_Click(object sender, RoutedEventArgs e)
+        private void shop2_back_button_Click(object sender, RoutedEventArgs e)
         {
             Gridgomb.Visibility = Visibility.Visible;
             Kosar.Visibility = Visibility.Hidden;
@@ -300,7 +299,7 @@ namespace ST_CSP_Projekt
             Logo.Visibility = Visibility.Visible;
         }
 
-        private void buttonn1_Click(object sender, RoutedEventArgs e)
+        private void shop2_kosar_Click(object sender, RoutedEventArgs e)
         {
             osszegg.Text = "Végösszeg: " + osszeg + " Ft \t" + "Termékek száma: " + osszegdb + " db";
             Gridgomb.Visibility = Visibility.Hidden;
@@ -388,6 +387,11 @@ namespace ST_CSP_Projekt
         private void insta_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.instagram.com/premontrei_kozepiskola/");
+        }
+
+        private void kilepes_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
 
         /*

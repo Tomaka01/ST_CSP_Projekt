@@ -160,5 +160,23 @@
   <ItemGroup>
     <Resource Include="user.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pasta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pita-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="biryani.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="soft-drink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="mineral-water.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
