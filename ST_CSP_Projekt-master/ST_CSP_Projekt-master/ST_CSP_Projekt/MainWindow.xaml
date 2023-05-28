@@ -65,10 +65,10 @@
     </Window.Resources>
     <Grid VerticalAlignment="Center" Height="1000" Width="1700" OpacityMask="#FF1ED760" Background="#FF838383">
         <Button Style="{StaticResource CustomButtonStyle}" x:Name="button1" Content="Bejelentkezés" HorizontalAlignment="Center" Margin="724,631,772,280" VerticalAlignment="Center" Width="204" Height="89" Click="button_Click" FontSize="18" FontFamily="Broadway" FontWeight="Normal" Foreground="Black"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="49" Margin="788,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" RenderTransformOrigin="0.505,0.491"/>
-        <Label x:Name="label1" Content="Felhasználónév:" HorizontalAlignment="Left" Margin="558,347,0,0" VerticalAlignment="Top" Width="194" Height="29" FontSize="20" FontFamily="Broadway"/>
-        <PasswordBox x:Name="passwordBox1" HorizontalAlignment="Left" Margin="788,476,0,0" VerticalAlignment="Top" Width="279" Height="51"/>
-        <Label x:Name="label1_Copy" Content="Jelszó:" HorizontalAlignment="Left" Margin="654,476,0,0" VerticalAlignment="Top" Width="98" Height="33" FontSize="20" FontFamily="Broadway"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="30" Margin="757,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" RenderTransformOrigin="0.505,0.491" FontSize="18" FontFamily="Broadway"/>
+        <Label x:Name="label1" Content="Felhasználónév:" HorizontalAlignment="Left" Margin="558,347,0,0" VerticalAlignment="Top" Width="194" Height="30" FontSize="20" FontFamily="Broadway"/>
+        <PasswordBox x:Name="passwordBox1" HorizontalAlignment="Left" Margin="757,476,0,0" VerticalAlignment="Top" Width="279" Height="30" FontSize="18" FontFamily="Broadway"/>
+        <Label x:Name="label1_Copy" Content="Jelszó:" HorizontalAlignment="Left" Margin="654,476,0,0" VerticalAlignment="Top" Width="98" Height="30" FontSize="20" FontFamily="Broadway"/>
         <Button Style="{StaticResource CustomButtonStyle}" x:Name="button2" Content="Kilépés" HorizontalAlignment="Left" Margin="1464,882,0,0" VerticalAlignment="Top" Width="203" Height="83" Click="button2_Click" FontSize="18" FontFamily="Broadway" FontWeight="Normal" Foreground="Black"/>
         <Label Content="Nincs még fiókod? Regisztrálj itt:" HorizontalAlignment="Left" Margin="101,717,0,0" VerticalAlignment="Top" Width="335" Height="33" FontSize="18" FontFamily="Broadway"/>
         <Button Style="{StaticResource CustomButtonStyle}" x:Name="gomb" Content="Regisztráció" HorizontalAlignment="Left" Margin="191,755,0,0" VerticalAlignment="Top" Width="150" Click="gomb_Click" Height="55" FontSize="18" FontFamily="Broadway" FontWeight="Normal" Background="#FF1ED760" Foreground="Black"/>
@@ -81,6 +81,29 @@
             </Button>
             <Label Content="Foodify" HorizontalAlignment="Left" Margin="176,38,0,0" VerticalAlignment="Top" Height="52" Width="157" FontSize="36" FontFamily="Broadway"/>
             <Label Content="Your passport to a world of tasty possibilities." HorizontalAlignment="Left" Margin="176,95,0,0" VerticalAlignment="Top" Height="36" Width="453" FontSize="18" FontFamily="Broadway"/>
+            <Button Style="{StaticResource Logocustom}" x:Name="insta" HorizontalAlignment="Left" Margin="1460,61,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="insta_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="instagram.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Style="{StaticResource Logocustom}" x:Name="web" HorizontalAlignment="Left" Margin="826,61,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="web_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="world-wide-web.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Style="{StaticResource Logocustom}" x:Name="facebook" HorizontalAlignment="Left" Margin="1162,61,0,0" VerticalAlignment="Top" Width="150" Height="100
+                    " BorderBrush="{x:Null}" Click="facebook_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="facebook.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
         </Grid>
+        <Image Margin="1432,251,168,649" Width="100" Height="100" Source="fast-food.png" Stretch="Fill"/>
+        <Image Margin="101,510,1499,390" Width="100" Height="100" Source="diet.png" Stretch="Fill"/>
+        <Image Margin="788,834,812,66" Width="100" Height="100" Source="diet (1).png" Stretch="Fill"/>
+        <Image Margin="1266,576,334,324" Width="100" Height="100" Source="135763.png" Stretch="Fill"/>
+        <Image Margin="354,276,1246,624" Width="100" Height="100" Source="hot-pot.png" Stretch="Fill"/>
+        <Image Margin="454,546,1146,354" Width="100" Height="100" Source="dish (1).png" Stretch="Fill"/>
+        <Image Margin="191,865,1409,35" Width="100" Height="100" Source="food.png" Stretch="Fill"/>
     </Grid>
 </Window>

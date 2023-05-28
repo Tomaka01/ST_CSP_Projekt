@@ -86,5 +86,20 @@ namespace ST_CSP_Projekt
         {
             MessageBox.Show("Szeretünk Józsi Bácsi! ;)");
         }
+
+        private void web_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://premontrei-keszthely.hu");
+        }
+
+        private void facebook_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com/Premontrei.Keszthely");
+        }
+
+        private void insta_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.instagram.com/premontrei_kozepiskola/");
+        }
     }
 }

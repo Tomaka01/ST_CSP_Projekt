@@ -111,10 +111,40 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="20180911_160250.jpg" />
+    <Resource Include="fast-delivery.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="fast-delivery.png" />
+    <Resource Include="dish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fast-food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="diet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="diet %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="135763.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="hot-pot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="dish %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="world-wide-web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="instagram.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
