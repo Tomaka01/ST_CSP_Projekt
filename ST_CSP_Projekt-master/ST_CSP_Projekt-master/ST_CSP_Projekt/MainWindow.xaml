@@ -6,15 +6,55 @@
         xmlns:local="clr-namespace:ST_CSP_Projekt"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Height="1000" Width="1700" Background="White">
-    <Grid>
-        <Button x:Name="button1" Content="Bejelentkezés" HorizontalAlignment="Left" Margin="314,334,0,0" VerticalAlignment="Top" Width="120" Height="39" Click="button_Click"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="372,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="label1" Content="Felhasználónév:" HorizontalAlignment="Left" Margin="263,155,0,0" VerticalAlignment="Top" Width="95"/>
-        <PasswordBox x:Name="passwordBox1" HorizontalAlignment="Left" Margin="372,196,0,0" VerticalAlignment="Top" Width="120" Height="27"/>
-        <Label x:Name="label1_Copy" Content="Jelszó:" HorizontalAlignment="Left" Margin="263,196,0,0" VerticalAlignment="Top" Width="83"/>
-        <Button x:Name="button2" Content="Kilépés" HorizontalAlignment="Left" Margin="626,337,0,0" VerticalAlignment="Top" Width="120" Height="36" Click="button2_Click"/>
-        <Label Content="Nincs még fiókod? Regisztrálj itt:" HorizontalAlignment="Left" Margin="54,262,0,0" VerticalAlignment="Top" Width="186"/>
-        <Button x:Name="gomb" Content="Regisztráció" HorizontalAlignment="Left" Margin="102,293,0,0" VerticalAlignment="Top" Width="75" Click="gomb_Click"/>
+        Title="Foodify" Height="1000" Width="1700" Background="White">
+    <Window.Resources>
+        <Style x:Key="CustomButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#FF2E802E"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="MinWidth" Value="100"/>
+            <Setter Property="MinHeight" Value="40"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="20">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="Logocustom" TargetType="Button">
+            <Setter Property="Background" Value="#FF2E802E"/>
+        </Style>
+    </Window.Resources>
+    <Grid VerticalAlignment="Center">
+        <Button Style="{StaticResource CustomButtonStyle}" x:Name="button1" Content="Bejelentkezés" HorizontalAlignment="Left" Margin="746,634,0,0" VerticalAlignment="Top" Width="204" Height="89" Click="button_Click" FontSize="18"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="53" Margin="845,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <Label x:Name="label1" Content="Felhasználónév:" HorizontalAlignment="Left" Margin="658,227,0,0" VerticalAlignment="Top" Width="164" Height="59" FontSize="18"/>
+        <PasswordBox x:Name="passwordBox1" HorizontalAlignment="Left" Margin="845,320,0,0" VerticalAlignment="Top" Width="202" Height="62"/>
+        <Label x:Name="label1_Copy" Content="Jelszó:" HorizontalAlignment="Left" Margin="658,320,0,0" VerticalAlignment="Top" Width="144" Height="59" FontSize="18"/>
+        <Button Style="{StaticResource CustomButtonStyle}" x:Name="button2" Content="Kilépés" HorizontalAlignment="Left" Margin="1278,640,0,0" VerticalAlignment="Top" Width="203" Height="83" Click="button2_Click" FontSize="18"/>
+        <Label Content="Nincs még fiókod? Regisztrálj itt:" HorizontalAlignment="Left" Margin="302,469,0,0" VerticalAlignment="Top" Width="319" Height="61" FontSize="18"/>
+        <Button Style="{StaticResource CustomButtonStyle}" x:Name="gomb" Content="Regisztráció" HorizontalAlignment="Left" Margin="382,542,0,0" VerticalAlignment="Top" Width="128" Click="gomb_Click" Height="43" FontSize="18"/>
+        <Grid x:Name="Logo" HorizontalAlignment="Left" Height="134" Margin="0,-120,0,0" VerticalAlignment="Top" Width="1692">
+            <Button Style="{StaticResource Logocustom}" Content="" HorizontalAlignment="Left" Margin="548,40,0,0" VerticalAlignment="Top" Width="485" Height="64">
+                <Button.Background>
+                    <ImageBrush ImageSource="20180911_160250.jpg"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+
     </Grid>
 </Window>

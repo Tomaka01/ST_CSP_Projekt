@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ST_CSP_Projekt"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Window2" Height="1000" Width="1700">
+        Title="Foodify" Height="1000" Width="1700">
     <Grid Height="881">
         <Grid x:Name="Kosar" Height="881" Width="1692">
             <ListBox x:Name="etelkosar" HorizontalAlignment="Left" Height="226" Margin="79,33,0,0" VerticalAlignment="Top" Width="220"/>
