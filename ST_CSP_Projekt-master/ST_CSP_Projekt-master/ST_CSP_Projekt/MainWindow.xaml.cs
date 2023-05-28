@@ -81,5 +81,10 @@ namespace ST_CSP_Projekt
             w.Show();
             Close();
         }
+
+        private void logo_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Szeretünk Józsi Bácsi! ;)");
+        }
     }
 }

@@ -7,21 +7,87 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="Foodify" Height="1000" Width="1700">
+    <Window.Resources>
+        <Style x:Key="CustomButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#FF2E802E"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="MinWidth" Value="100"/>
+            <Setter Property="MinHeight" Value="40"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="20">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="Logocustom" TargetType="Button">
+            <Setter Property="Background" Value="#FF2E802E"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="MinWidth" Value="100"/>
+            <Setter Property="MinHeight" Value="40"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="20">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="320,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="320,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="320,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="320,117,0,0" VerticalAlignment="Top" Width="120" Height="27"/>
-        <PasswordBox x:Name="passwordBox1" HorizontalAlignment="Left" Margin="320,159,0,0" VerticalAlignment="Top" Width="120" Height="27"/>
-        <Label x:Name="label" Content="Felhasználónév:" HorizontalAlignment="Left" Margin="211,36,0,0" VerticalAlignment="Top" Width="95"/>
-        <Label x:Name="label_Copy" Content="Email-cím:" HorizontalAlignment="Left" Margin="211,77,0,0" VerticalAlignment="Top" Width="95"/>
-        <Label x:Name="label1" Content="Jelszó:" HorizontalAlignment="Left" Margin="211,117,0,0" VerticalAlignment="Top" Width="83"/>
-        <Label x:Name="label2" Content="Jelszó mégegyszer:" HorizontalAlignment="Left" Margin="193,159,0,0" VerticalAlignment="Top" Width="113"/>
-        <Label x:Name="label3" Content="Életkor:" HorizontalAlignment="Left" Margin="211,204,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.308" Width="83"/>
-        <RadioButton x:Name="radioButton" Content="Férfi" HorizontalAlignment="Left" Margin="320,259,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="radioButton1" Content="Nő" HorizontalAlignment="Left" Margin="320,291,0,0" VerticalAlignment="Top" Width="42"/>
-        <Label x:Name="label4" Content="Nem:" HorizontalAlignment="Left" Margin="211,248,0,0" VerticalAlignment="Top" Width="60"/>
-        <Button x:Name="button" Content="Regisztrálás" HorizontalAlignment="Left" Margin="320,334,0,0" VerticalAlignment="Top" Width="120" Height="39" Click="button_Click"/>
-        <Button x:Name="button3" Content="Vissza" HorizontalAlignment="Left" Margin="64,359,0,0" VerticalAlignment="Top" Width="120" Height="36" Click="button3_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="28" Margin="926,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="32" Margin="926,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="32" Margin="926,495,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="926,376,0,0" VerticalAlignment="Top" Width="200" Height="37"/>
+        <PasswordBox x:Name="passwordBox1" HorizontalAlignment="Left" Margin="926,434,0,0" VerticalAlignment="Top" Width="200" Height="34"/>
+        <Label x:Name="label" Content="Felhasználónév:" HorizontalAlignment="Left" Margin="745,272,0,0" VerticalAlignment="Top" Width="157" Height="33"/>
+        <Label x:Name="label_Copy" Content="Email-cím:" HorizontalAlignment="Left" Margin="745,326,0,0" VerticalAlignment="Top" Width="157" Height="35"/>
+        <Label x:Name="label1" Content="Jelszó:" HorizontalAlignment="Left" Margin="745,376,0,0" VerticalAlignment="Top" Width="138" Height="35"/>
+        <Label x:Name="label2" Content="Jelszó mégegyszer:" HorizontalAlignment="Left" Margin="714,434,0,0" VerticalAlignment="Top" Width="188" Height="34"/>
+        <Label x:Name="label3" Content="Életkor:" HorizontalAlignment="Left" Margin="745,493,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.308" Width="138" Height="34"/>
+        <RadioButton x:Name="radioButton" Content="Férfi" HorizontalAlignment="Left" Margin="926,564,0,0" VerticalAlignment="Top" Height="20" Width="70"/>
+        <RadioButton x:Name="radioButton1" Content="Nő" HorizontalAlignment="Left" Margin="926,607,0,0" VerticalAlignment="Top" Width="70" Height="20"/>
+        <Label x:Name="label4" Content="Nem:" HorizontalAlignment="Left" Margin="745,550,0,0" VerticalAlignment="Top" Width="99" Height="34"/>
+        <Button Style="{StaticResource CustomButtonStyle}" x:Name="button" Content="Regisztrálás" HorizontalAlignment="Left" Margin="926,664,0,0" VerticalAlignment="Top" Width="200" Height="49" Click="button_Click"/>
+        <Button Style="{StaticResource CustomButtonStyle}" x:Name="button3" Content="Vissza" HorizontalAlignment="Left" Margin="500,696,0,0" VerticalAlignment="Top" Width="200" Height="47" Click="button3_Click"/>
+        <Grid x:Name="Logo" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="1700" Background="#FF1ED760">
+            <Button x:Name="logo" Style="{StaticResource Logocustom}" Content="" HorizontalAlignment="Left" Margin="21,38,0,0" VerticalAlignment="Top" Width="150" Height="150
+                    " BorderBrush="{x:Null}">
+                <Button.Background>
+                    <ImageBrush ImageSource="fast-delivery.png"/>
+                </Button.Background>
+            </Button>
+            <Label Content="Foodify" HorizontalAlignment="Left" Margin="176,38,0,0" VerticalAlignment="Top" Height="52" Width="157" FontSize="36" FontFamily="Broadway"/>
+            <Label Content="Your passport to a world of tasty possibilities." HorizontalAlignment="Left" Margin="176,95,0,0" VerticalAlignment="Top" Height="36" Width="453" FontSize="18" FontFamily="Broadway"/>
+        </Grid>
     </Grid>
 </Window>
