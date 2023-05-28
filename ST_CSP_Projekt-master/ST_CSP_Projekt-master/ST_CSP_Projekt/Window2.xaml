@@ -64,27 +64,28 @@
         </Style>
     </Window.Resources>
     <Grid VerticalAlignment="Center" Height="1000" Width="1700" OpacityMask="#FF1ED760" Background="#FF838383">
-        <Grid x:Name="Kosar" Height="1000" Width="1700" Visibility="Hidden">
-            <ListBox x:Name="etelkosar" HorizontalAlignment="Left" Height="226" Margin="295,533,0,0" VerticalAlignment="Top" Width="220"/>
-            <Button Style="{StaticResource CustomButtonStyle}" x:Name="button2" Content="Vissza" HorizontalAlignment="Left" Margin="335,819,0,0" VerticalAlignment="Top" Width="111" Height="53" Click="button2_Click_1"/>
-            <Button Style="{StaticResource CustomButtonStyle}" x:Name="rendeles" Content="Rendelés&#xD;&#xA;leadása" HorizontalAlignment="Left" Margin="1142,797,0,0" VerticalAlignment="Top" Width="111" Height="53" Click="rendeles_Click"/>
-            <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="716,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="716,417,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="716,448,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <Label x:Name="label" Content="Település:" HorizontalAlignment="Left" Margin="558,386,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="label1" Content="Irányítószám:" HorizontalAlignment="Left" Margin="558,417,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="label2" Content="Utca:" HorizontalAlignment="Left" Margin="558,448,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.473,0.519"/>
-            <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" Margin="716,479,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <Label x:Name="label3" Content="Házszám/emelet:" HorizontalAlignment="Left" Margin="558,479,0,0" VerticalAlignment="Top"/>
-            <RadioButton x:Name="radioButton" Content="Készpénz" HorizontalAlignment="Left" Margin="1037,595,0,0" VerticalAlignment="Top"/>
-            <RadioButton x:Name="radioButton1" Content="Bankkártya" HorizontalAlignment="Left" Margin="1202,581,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="label4" Content="Fizetési mód:" HorizontalAlignment="Left" Margin="850,581,0,0" VerticalAlignment="Top"/>
-            <TextBlock x:Name="osszegg" HorizontalAlignment="Left" Margin="10,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365" Height="125"/>
-            <Label x:Name="label5" Content="Összesen:" HorizontalAlignment="Left" Margin="117,779,0,0" VerticalAlignment="Top"/>
-            <Button Style="{StaticResource CustomButtonStyle}" x:Name="delete" Content="Törlés" HorizontalAlignment="Left" Margin="1037,397,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="delete_Click"/>
+        <Grid x:Name="Kosar_Grid" Height="1000" Width="1700">
+            <ListBox x:Name="etelkosar" HorizontalAlignment="Left" Height="226" Margin="153,312,0,0" VerticalAlignment="Top" Width="256" FontFamily="Broadway" FontSize="18"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="kosar_back" Content="Vissza" HorizontalAlignment="Left" Margin="50,878,0,0" VerticalAlignment="Top" Width="200" Height="80
+                    " Click="kosar_back_Click_1" Foreground="Black"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="kosar_rendeles" Content="Rendelés leadása" HorizontalAlignment="Left" Margin="979,755,0,0" VerticalAlignment="Top" Width="200" Height="80" Click="kosar_rendeles_Click" Foreground="Black"/>
+            <TextBox x:Name="kosar_telepules_input" HorizontalAlignment="Left" Height="30" Margin="1109,370,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" FontFamily="Broadway" FontSize="18"/>
+            <TextBox x:Name="kosar_irszam_input" HorizontalAlignment="Left" Height="30" Margin="1109,417,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" FontFamily="Broadway" FontSize="18"/>
+            <TextBox x:Name="kosar_utca_input" HorizontalAlignment="Left" Height="30" Margin="1109,462,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" FontFamily="Broadway" FontSize="18"/>
+            <Label x:Name="kosar_telepules" Content="Település:" HorizontalAlignment="Left" Margin="844,370,0,0" Height="30" VerticalAlignment="Top" FontFamily="Broadway" FontSize="20"/>
+            <Label x:Name="kosar_irszam" Content="Irányítószám:" HorizontalAlignment="Left" Margin="844,417,0,0" Height="30" VerticalAlignment="Top" FontFamily="Broadway" FontSize="20" RenderTransformOrigin="1.051,0.758"/>
+            <Label x:Name="kosar_utca" Content="Utca:" HorizontalAlignment="Left" Margin="844,462,0,0" Height="30" VerticalAlignment="Top" RenderTransformOrigin="2.403,0.727" FontFamily="Broadway" FontSize="20"/>
+            <TextBox x:Name="kosar_hazszam_input" HorizontalAlignment="Left" Height="30" Margin="1109,508,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" FontFamily="Broadway" FontSize="18"/>
+            <Label x:Name="kosar_hazszam" Content="Házszám/emelet:" HorizontalAlignment="Left" Margin="844,508,0,0" Height="30" VerticalAlignment="Top" FontFamily="Broadway" FontSize="20"/>
+            <RadioButton x:Name="kosar_keszpenz" Content="Készpénz" HorizontalAlignment="Left" Margin="1022,658,0,0" Height="30" VerticalAlignment="Top" FontFamily="Broadway" FontSize="20"/>
+            <RadioButton x:Name="kosar_kartya" Content="Bankkártya" HorizontalAlignment="Left" Margin="1210,658,0,0" Height="30" VerticalAlignment="Top" FontFamily="Broadway" FontSize="20" RenderTransformOrigin="0.501,0.5"/>
+            <Label x:Name="kosar_fizetesmod" Content="Fizetési mód:" HorizontalAlignment="Left" Margin="822,635,0,0" Height="30" VerticalAlignment="Top" FontFamily="Broadway" FontSize="20"/>
+            <TextBlock x:Name="kosar_osszeg" HorizontalAlignment="Left" Margin="36,562,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="538" Height="64" FontFamily="Broadway" FontSize="20"/>
+            <Label x:Name="kosar_ossz" Content="Összesen:" HorizontalAlignment="Left" Margin="50,266,0,0" VerticalAlignment="Top" FontFamily="Broadway" FontSize="20"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="kosar_delete" Content="Tartalom törlése" HorizontalAlignment="Left" Margin="428,394,0,0" VerticalAlignment="Top" Width="146" Height="53" Click="kosar_delete_Click" Foreground="Black"/>
 
         </Grid>
-        <Grid x:Name="Gridgomb" Height="1000" Width="1700" Visibility="Hidden">
+        <Grid x:Name="Shop1_Grid" Height="1000" Width="1700" Visibility="Hidden">
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel1gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="109,496,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel1gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel2gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="585,496,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel2gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel3gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="1064,496,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel3gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
@@ -115,7 +116,7 @@
 
 
         </Grid>
-        <Grid x:Name="Gridgombok" Height="1000" Width="1700" Grid.ColumnSpan="2">
+        <Grid x:Name="Shop2_Grid" Height="1000" Width="1700" Grid.ColumnSpan="2" Visibility="Hidden">
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel7gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="275,480,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel7gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel8gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="749,480,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel8gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel9gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="1168,480,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel9gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
@@ -124,7 +125,7 @@
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel12gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="1168,846,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel12gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="shop2_back_button" Content="&lt;" HorizontalAlignment="Left" Margin="0,607,0,0" VerticalAlignment="Top" Width="20" FontSize="18" Height="50" Click="shop2_back_button_Click" FontFamily="Broadway" Foreground="Black"/>
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="shop2_kosar" Content="Kosár" HorizontalAlignment="Left" Margin="1465,235,0,0" VerticalAlignment="Top" Width="200" Height="100" Click="shop2_kosar_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
-            <Button Style="{StaticResource CustomButtonStyle}" x:Name="shop_kilepes" Content="Kilépés" HorizontalAlignment="Left" Margin="1465,871,0,0" VerticalAlignment="Top" Width="200" Height="100" Click="shop2_kilepes_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="shop2_kilepes" Content="Kilépés" HorizontalAlignment="Left" Margin="1465,871,0,0" VerticalAlignment="Top" Width="200" Height="100" Click="shop2_kilepes_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
             <Image Margin="257,211,1243,589" Source="pasta.png" Width="200" Height="200" Stretch="Fill"/>
             <Image Margin="732,211,768,589" Source="pita-.png" Width="200" Height="200" Stretch="Fill"/>
             <Image Margin="1150,211,350,589" Source="biryani.png" Width="200" Height="200" Stretch="Fill"/>

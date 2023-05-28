@@ -26,26 +26,26 @@ namespace ST_CSP_Projekt
         public Window2()
         {
             InitializeComponent();
-            Gridgomb.Visibility = Visibility.Visible;
-            Kosar.Visibility = Visibility.Hidden;
-            Gridgombok.Visibility = Visibility.Hidden;
+            Shop1_Grid.Visibility = Visibility.Visible;
+            Kosar_Grid.Visibility = Visibility.Hidden;
+            Shop2_Grid.Visibility = Visibility.Hidden;
             Logo.Visibility = Visibility.Visible;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Gridgomb.Visibility = Visibility.Hidden;
-            Kosar.Visibility = Visibility.Hidden;
-            Gridgombok.Visibility = Visibility.Visible;
+            Shop1_Grid.Visibility = Visibility.Hidden;
+            Kosar_Grid.Visibility = Visibility.Hidden;
+            Shop2_Grid.Visibility = Visibility.Visible;
             Logo.Visibility = Visibility.Visible;
         }
 
         private void kosar_Click(object sender, RoutedEventArgs e)
         {
-            osszegg.Text = "Végösszeg: " + osszeg + " Ft \t" +"Termékek száma: "+ osszegdb + " db";
-            Gridgomb.Visibility = Visibility.Hidden;
-            Kosar.Visibility = Visibility.Visible;
-            Gridgombok.Visibility = Visibility.Hidden;
+            kosar_osszeg.Text = "Végösszeg: " + osszeg + " Ft \t" +"Termékek száma: "+ osszegdb + " db";
+            Shop1_Grid.Visibility = Visibility.Hidden;
+            Kosar_Grid.Visibility = Visibility.Visible;
+            Shop2_Grid.Visibility = Visibility.Hidden;
             Logo.Visibility = Visibility.Visible;
         }
 
@@ -92,11 +92,11 @@ namespace ST_CSP_Projekt
             }
         }
 
-        private void button2_Click_1(object sender, RoutedEventArgs e)
+        private void kosar_back_Click_1(object sender, RoutedEventArgs e)
         {
-            Gridgomb.Visibility = Visibility.Visible;
-            Kosar.Visibility = Visibility.Hidden;
-            Gridgombok.Visibility = Visibility.Hidden;
+            Shop1_Grid.Visibility = Visibility.Visible;
+            Kosar_Grid.Visibility = Visibility.Hidden;
+            Shop2_Grid.Visibility = Visibility.Hidden;
             Logo.Visibility = Visibility.Visible;
 
         }
@@ -293,34 +293,34 @@ namespace ST_CSP_Projekt
 
         private void shop2_back_button_Click(object sender, RoutedEventArgs e)
         {
-            Gridgomb.Visibility = Visibility.Visible;
-            Kosar.Visibility = Visibility.Hidden;
-            Gridgombok.Visibility = Visibility.Hidden;
+            Shop1_Grid.Visibility = Visibility.Visible;
+            Kosar_Grid.Visibility = Visibility.Hidden;
+            Shop2_Grid.Visibility = Visibility.Hidden;
             Logo.Visibility = Visibility.Visible;
         }
 
         private void shop2_kosar_Click(object sender, RoutedEventArgs e)
         {
-            osszegg.Text = "Végösszeg: " + osszeg + " Ft \t" + "Termékek száma: " + osszegdb + " db";
-            Gridgomb.Visibility = Visibility.Hidden;
-            Kosar.Visibility = Visibility.Visible;
-            Gridgombok.Visibility = Visibility.Hidden;
+            kosar_osszeg.Text = "Végösszeg: " + osszeg + " Ft \t" + "Termékek száma: " + osszegdb + " db";
+            Shop1_Grid.Visibility = Visibility.Hidden;
+            Kosar_Grid.Visibility = Visibility.Visible;
+            Shop2_Grid.Visibility = Visibility.Hidden;
             Logo.Visibility = Visibility.Visible;
         }
 
-        private void rendeles_Click(object sender, RoutedEventArgs e)
+        private void kosar_rendeles_Click(object sender, RoutedEventArgs e)
         {
             int iranyito1 = 0;
-            string iranyito = textBox1.Text;
+            string iranyito = kosar_irszam_input.Text;
             int hazszam1 = 0;
-            string hazszam = textBox3.Text;
-            if (textBox.Text!="" & textBox1.Text!="" & textBox2.Text!="" & textBox3.Text!="" & radioButton.IsChecked==true | radioButton1.IsChecked==true)
+            string hazszam = kosar_hazszam_input.Text;
+            if (kosar_telepules_input.Text!="" & kosar_irszam_input.Text!="" & kosar_utca_input.Text!="" & kosar_hazszam_input.Text!="" & kosar_keszpenz.IsChecked==true | kosar_kartya.IsChecked==true)
             {
                 if (int.TryParse(iranyito, out iranyito1))
                 {
                     if (int.TryParse(hazszam, out hazszam1))
                     {
-                        if (textBox1.Text.Length == 4)
+                        if (kosar_irszam_input.Text.Length == 4)
                         {
                             MessageBox.Show("A rendelés leadva!");
                             Close();
@@ -349,24 +349,12 @@ namespace ST_CSP_Projekt
 
         }
 
-        private void delete_Click(object sender, RoutedEventArgs e)
+        private void kosar_delete_Click(object sender, RoutedEventArgs e)
         {
-            if (etelkosar.Items.Contains("Pizza " + osszegdb + " db " + osszeg + "Ft" + "\t"))
-            {
-                osszeg -= 2300;
-                osszegdb--;
-                var selectedItems = etelkosar.SelectedItems.Cast<object>().ToList();
-                foreach (var selectedItem in selectedItems)
-                {
-                    etelkosar.Items.Remove(selectedItem);
-                }
-                osszegg.Text = "Végösszeg: " + osszeg + " Ft \t" + "Termékek száma: " + osszegdb + " db";
-            }
-            else
-            {
-                MessageBox.Show("Nem");
-            }
-
+            etelkosar.Items.Clear();
+            kosar_osszeg.Text = "Végösszeg: 0 Ft "+" "+" Termékek száma: 0 db";
+            osszegdb = 0;
+            osszeg = 0;
         }
 
         private void logo_Click(object sender, RoutedEventArgs e)
