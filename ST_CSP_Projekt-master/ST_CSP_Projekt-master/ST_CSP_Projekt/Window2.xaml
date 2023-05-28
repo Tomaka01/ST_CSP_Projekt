@@ -83,7 +83,12 @@
             <TextBlock x:Name="kosar_osszeg" HorizontalAlignment="Left" Margin="36,562,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="538" Height="64" FontFamily="Broadway" FontSize="20"/>
             <Label x:Name="kosar_ossz" Content="Összesen:" HorizontalAlignment="Left" Margin="50,266,0,0" VerticalAlignment="Top" FontFamily="Broadway" FontSize="20"/>
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="kosar_delete" Content="Tartalom törlése" HorizontalAlignment="Left" Margin="428,394,0,0" VerticalAlignment="Top" Width="146" Height="53" Click="kosar_delete_Click" Foreground="Black"/>
-
+            <Image Margin="101,694,1499,206" Width="100" Height="100" Source="diet.png" Stretch="Fill"/>
+            <Image Margin="640,250,960,650" Width="100" Height="100" Source="hot-pot.png" Stretch="Fill"/>
+            <Image Margin="1524,333,76,567" Width="100" Height="100" Source="fast-food.png" Stretch="Fill"/>
+            <Image Margin="1378,774,222,126" Width="100" Height="100" Source="135763.png" Stretch="Fill"/>
+            <Image Margin="482,774,1118,126" Width="100" Height="100" Source="diet (1).png" Stretch="Fill"/>
+            <Image Margin="640,542,960,358" Width="100" Height="100" Source="dish (1).png" Stretch="Fill"/>
         </Grid>
         <Grid x:Name="Shop1_Grid" Height="1000" Width="1700" Visibility="Hidden">
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel1gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="109,496,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel1gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
@@ -178,11 +183,5 @@
             </Button>
             <Label x:Name="username" Content="" HorizontalAlignment="Left" Margin="1511,143,0,0" Width="100" Height="40" VerticalAlignment="Top" FontFamily="Broadway" FontSize="18"/>
         </Grid>
-        <Image Margin="101,694,1499,206" Width="100" Height="100" Source="diet.png" Stretch="Fill"/>
-        <Image Margin="640,250,960,650" Width="100" Height="100" Source="hot-pot.png" Stretch="Fill"/>
-        <Image Margin="1524,333,76,567" Width="100" Height="100" Source="fast-food.png" Stretch="Fill"/>
-        <Image Margin="1378,774,222,126" Width="100" Height="100" Source="135763.png" Stretch="Fill"/>
-        <Image Margin="482,774,1118,126" Width="100" Height="100" Source="diet (1).png" Stretch="Fill"/>
-        <Image Margin="640,542,960,358" Width="100" Height="100" Source="dish (1).png" Stretch="Fill"/>
     </Grid>
 </Window>
