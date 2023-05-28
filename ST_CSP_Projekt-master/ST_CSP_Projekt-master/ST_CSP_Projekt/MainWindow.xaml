@@ -63,36 +63,36 @@
             </Setter>
         </Style>
     </Window.Resources>
-    <Grid VerticalAlignment="Center" Height="1000" Width="1700" OpacityMask="#FF1ED760" Background="#FF838383">
-        <Button Style="{StaticResource CustomButtonStyle}" x:Name="button1" Content="Bejelentkezés" HorizontalAlignment="Center" Margin="724,631,772,280" VerticalAlignment="Center" Width="204" Height="89" Click="button_Click" FontSize="18" FontFamily="Broadway" FontWeight="Normal" Foreground="Black"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="30" Margin="757,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" RenderTransformOrigin="0.505,0.491" FontSize="18" FontFamily="Broadway" Background="White"/>
-        <Label x:Name="label1" Content="Felhasználónév:" HorizontalAlignment="Left" Margin="558,347,0,0" VerticalAlignment="Top" Width="194" Height="30" FontSize="20" FontFamily="Broadway"/>
-        <PasswordBox x:Name="passwordBox1" HorizontalAlignment="Left" Margin="757,476,0,0" VerticalAlignment="Top" Width="279" Height="30" FontSize="18" FontFamily="Broadway" Background="White"/>
-        <Label x:Name="label1_Copy" Content="Jelszó:" HorizontalAlignment="Left" Margin="654,476,0,0" VerticalAlignment="Top" Width="98" Height="30" FontSize="20" FontFamily="Broadway"/>
-        <Button Style="{StaticResource CustomButtonStyle}" x:Name="button2" Content="Kilépés" HorizontalAlignment="Left" Margin="1464,882,0,0" VerticalAlignment="Top" Width="203" Height="83" Click="button2_Click" FontSize="18" FontFamily="Broadway" FontWeight="Normal" Foreground="Black"/>
-        <Label Content="Nincs még fiókod? Regisztrálj itt:" HorizontalAlignment="Left" Margin="101,717,0,0" VerticalAlignment="Top" Width="335" Height="33" FontSize="18" FontFamily="Broadway"/>
-        <Button Style="{StaticResource CustomButtonStyle}" x:Name="gomb" Content="Regisztráció" HorizontalAlignment="Left" Margin="191,755,0,0" VerticalAlignment="Top" Width="150" Click="gomb_Click" Height="55" FontSize="18" FontFamily="Broadway" FontWeight="Normal" Background="#FF1ED760" Foreground="Black"/>
-        <Grid x:Name="Logo" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="1700" Background="#FF1ED760" OpacityMask="#FF1ED760">
-            <Button x:Name="logo" Style="{StaticResource Logocustom}" Content="" HorizontalAlignment="Left" Margin="21,38,0,0" VerticalAlignment="Top" Width="150" Height="150
-                    " Click="logo_Click" BorderBrush="{x:Null}">
+    <Grid x:Name="Bejelentkezes_Grid" VerticalAlignment="Center" Height="1000" Width="1700" OpacityMask="#FF1ED760" Background="#FF838383">
+        <Button Style="{StaticResource CustomButtonStyle}" x:Name="bej_login_button" Content="Bejelentkezés" HorizontalAlignment="Center" Margin="724,631,772,280" VerticalAlignment="Center" Width="204" Height="89" Click="bej_login_button_Click" FontSize="18" FontFamily="Broadway" FontWeight="Normal" Foreground="Black"/>
+        <TextBox x:Name="bej_feh_input" HorizontalAlignment="Left" Height="30" Margin="757,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" RenderTransformOrigin="0.505,0.491" FontSize="18" FontFamily="Broadway" Background="White"/>
+        <Label x:Name="bej_felh" Content="Felhasználónév:" HorizontalAlignment="Left" Margin="558,347,0,0" VerticalAlignment="Top" Width="194" Height="30" FontSize="20" FontFamily="Broadway"/>
+        <PasswordBox x:Name="bej_jelszo_input" HorizontalAlignment="Left" Margin="757,476,0,0" VerticalAlignment="Top" Width="279" Height="30" FontSize="18" FontFamily="Broadway" Background="White"/>
+        <Label x:Name="bej_jelszo" Content="Jelszó:" HorizontalAlignment="Left" Margin="654,476,0,0" VerticalAlignment="Top" Width="98" Height="30" FontSize="20" FontFamily="Broadway"/>
+        <Button Style="{StaticResource CustomButtonStyle}" x:Name="bej_close" Content="Kilépés" HorizontalAlignment="Left" Margin="1464,882,0,0" VerticalAlignment="Top" Width="203" Height="83" Click="bej_close_Click" FontSize="18" FontFamily="Broadway" FontWeight="Normal" Foreground="Black"/>
+        <Label x:Name="bej_nouser_label" Content="Nincs még fiókod? Regisztrálj itt:" HorizontalAlignment="Left" Margin="101,717,0,0" VerticalAlignment="Top" Width="335" Height="33" FontSize="18" FontFamily="Broadway"/>
+        <Button Style="{StaticResource CustomButtonStyle}" x:Name="bej_register" Content="Regisztráció" HorizontalAlignment="Left" Margin="191,755,0,0" VerticalAlignment="Top" Width="150" Click="bej_register_Click" Height="55" FontSize="18" FontFamily="Broadway" FontWeight="Normal" Background="#FF1ED760" Foreground="Black"/>
+        <Grid x:Name="Bej_Logo_Grid" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="1700" Background="#FF1ED760" OpacityMask="#FF1ED760">
+            <Button x:Name="bej_logo" Style="{StaticResource Logocustom}" Content="" HorizontalAlignment="Left" Margin="21,38,0,0" VerticalAlignment="Top" Width="150" Height="150
+                    " Click="bej_logo_Click" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="fast-delivery.png"/>
                 </Button.Background>
             </Button>
             <Label Content="Foodify" HorizontalAlignment="Left" Margin="176,38,0,0" VerticalAlignment="Top" Height="52" Width="157" FontSize="36" FontFamily="Broadway"/>
             <Label Content="Your passport to a world of tasty possibilities." HorizontalAlignment="Left" Margin="176,95,0,0" VerticalAlignment="Top" Height="36" Width="453" FontSize="18" FontFamily="Broadway"/>
-            <Button Style="{StaticResource Logocustom}" x:Name="insta" HorizontalAlignment="Left" Margin="1460,61,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="insta_Click">
+            <Button Style="{StaticResource Logocustom}" x:Name="bej_insta" HorizontalAlignment="Left" Margin="1460,61,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="bej_insta_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="instagram.png" Stretch="Uniform"/>
                 </Button.Background>
             </Button>
-            <Button Style="{StaticResource Logocustom}" x:Name="web" HorizontalAlignment="Left" Margin="826,61,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="web_Click">
+            <Button Style="{StaticResource Logocustom}" x:Name="bej_web" HorizontalAlignment="Left" Margin="826,61,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="bej_web_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="world-wide-web.png" Stretch="Uniform"/>
                 </Button.Background>
             </Button>
-            <Button Style="{StaticResource Logocustom}" x:Name="facebook" HorizontalAlignment="Left" Margin="1162,61,0,0" VerticalAlignment="Top" Width="150" Height="100
-                    " BorderBrush="{x:Null}" Click="facebook_Click">
+            <Button Style="{StaticResource Logocustom}" x:Name="bej_facebook" HorizontalAlignment="Left" Margin="1162,61,0,0" VerticalAlignment="Top" Width="150" Height="100
+                    " BorderBrush="{x:Null}" Click="bej_facebook_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="facebook.png" Stretch="Uniform"/>
                 </Button.Background>
@@ -105,5 +105,58 @@
         <Image Margin="354,276,1246,624" Width="100" Height="100" Source="hot-pot.png" Stretch="Fill"/>
         <Image Margin="454,546,1146,354" Width="100" Height="100" Source="dish (1).png" Stretch="Fill"/>
         <Image Margin="191,865,1409,35" Width="100" Height="100" Source="food.png" Stretch="Fill"/>
+        
+        <Grid x:Name="Register_Grid" VerticalAlignment="Center" Height="1000" Width="1700" OpacityMask="#FF1ED760" Background="#FF838383" Visibility="Hidden">
+
+            <TextBox x:Name="reg_felh_input" HorizontalAlignment="Left" Height="28" Margin="882,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" FontFamily="Broadway" FontSize="18"/>
+            <TextBox x:Name="reg_email_input" HorizontalAlignment="Left" Height="32" Margin="882,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" FontFamily="Broadway" FontSize="18"/>
+            <TextBox x:Name="reg_age_input" HorizontalAlignment="Left" Height="32" Margin="882,495,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" FontFamily="Broadway" FontSize="18"/>
+            <PasswordBox x:Name="reg_pass_input" HorizontalAlignment="Left" Margin="882,376,0,0" VerticalAlignment="Top" Width="256" Height="37" FontFamily="Broadway" FontSize="18"/>
+            <PasswordBox x:Name="reg_pass_again_input" HorizontalAlignment="Left" Margin="882,434,0,0" VerticalAlignment="Top" Width="256" Height="34" FontFamily="Broadway" FontSize="18"/>
+            <Label x:Name="reg_felh" Content="Felhasználónév:" HorizontalAlignment="Left" Margin="656,272,0,0" VerticalAlignment="Top" Width="195" Height="33" FontFamily="Broadway" FontSize="20"/>
+            <Label x:Name="reg_email" Content="Email-cím:" HorizontalAlignment="Left" Margin="656,326,0,0" VerticalAlignment="Top" Width="157" Height="35" FontFamily="Broadway" FontSize="20"/>
+            <Label x:Name="reg_pass" Content="Jelszó:" HorizontalAlignment="Left" Margin="656,376,0,0" VerticalAlignment="Top" Width="138" Height="35" FontFamily="Broadway" FontSize="20" RenderTransformOrigin="0.094,0.486"/>
+            <Label x:Name="reg_pass_again" Content="Jelszó mégegyszer:" HorizontalAlignment="Left" Margin="656,434,0,0" VerticalAlignment="Top" Width="220" Height="34" FontFamily="Broadway" FontSize="20"/>
+            <Label x:Name="reg_age" Content="Életkor:" HorizontalAlignment="Left" Margin="656,493,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="138" Height="34" FontFamily="Broadway" FontSize="20"/>
+            <RadioButton x:Name="reg_male" Content="Férfi" HorizontalAlignment="Left" Margin="882,556,0,0" VerticalAlignment="Top" Height="20" Width="70" FontFamily="Broadway" FontSize="20"/>
+            <RadioButton x:Name="reg_female" Content="Nő" HorizontalAlignment="Left" Margin="1022,556,0,0" VerticalAlignment="Top" Width="70" Height="20" FontFamily="Broadway" FontSize="20"/>
+            <Label x:Name="reg_sex" Content="Nem:" HorizontalAlignment="Left" Margin="656,550,0,0" VerticalAlignment="Top" Width="99" Height="34" FontFamily="Broadway" FontSize="20"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="reg_register_button" Content="Regisztrálás" HorizontalAlignment="Left" Margin="766,651,0,0" VerticalAlignment="Top" Width="238" Height="69" Click="reg_register_button_Click" FontFamily="Broadway" FontSize="18" Background="#FF1ED760" Foreground="Black"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="reg_back_button" Content="Vissza" HorizontalAlignment="Left" Margin="40,882,0,0" VerticalAlignment="Top" Width="200" Height="47" Click="reg_back_button_Click" FontFamily="Broadway" FontSize="18" Background="#FF1ED760" Foreground="Black"/>
+            <Image Margin="1417,261,175,608" Width="100" Height="100" Source="fast-food.png" Stretch="Fill"/>
+            <Image Margin="109,538,1483,331" Width="100" Height="100" Source="diet.png" Stretch="Fill"/>
+            <Image Margin="794,829,798,40" Width="100" Height="100" Source="diet (1).png" Stretch="Fill"/>
+            <Image Margin="1254,576,338,293" Width="100" Height="100" Source="135763.png" Stretch="Fill"/>
+            <Image Margin="336,272,1256,597" Width="100" Height="100" Source="hot-pot.png" Stretch="Fill"/>
+            <Image Margin="1444,776,148,93" Width="100" Height="100" Source="dish (1).png" Stretch="Fill"/>
+            <Image Margin="374,674,1218,195" Width="100" Height="100" Source="food.png" Stretch="Fill"/>
+            <Grid x:Name="Reg_Logo_Grid" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="1700" Background="#FF1ED760" OpacityMask="#FF1ED760">
+                <Button x:Name="reg_logo" Style="{StaticResource Logocustom}" Content="" HorizontalAlignment="Left" Margin="21,38,0,0" VerticalAlignment="Top" Width="150" Height="150
+                    " Click="reg_logo_Click" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="fast-delivery.png"/>
+                    </Button.Background>
+                </Button>
+                <Label Content="Foodify" HorizontalAlignment="Left" Margin="176,38,0,0" VerticalAlignment="Top" Height="52" Width="157" FontSize="36" FontFamily="Broadway"/>
+                <Label Content="Your passport to a world of tasty possibilities." HorizontalAlignment="Left" Margin="176,95,0,0" VerticalAlignment="Top" Height="36" Width="453" FontSize="18" FontFamily="Broadway"/>
+                <Button Style="{StaticResource Logocustom}" x:Name="reg_insta" HorizontalAlignment="Left" Margin="1460,61,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="reg_insta_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="instagram.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+                <Button Style="{StaticResource Logocustom}" x:Name="reg_web" HorizontalAlignment="Left" Margin="826,61,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="reg_web_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="world-wide-web.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+                <Button Style="{StaticResource Logocustom}" x:Name="reg_facebook" HorizontalAlignment="Left" Margin="1162,61,0,0" VerticalAlignment="Top" Width="150" Height="100
+                    " BorderBrush="{x:Null}" Click="reg_facebook_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="facebook.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+            </Grid>
+        </Grid>
     </Grid>
+
 </Window>

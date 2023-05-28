@@ -39,13 +39,11 @@ E:\prog\ST_CSP_projekt\projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CS
 E:\prog\ST_CSP_projekt\projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\bin\Debug\ST_CSP_Projekt.pdb
 E:\prog\ST_CSP_projekt\projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\obj\Debug\ST_CSP_Projekt.csproj.AssemblyReference.cache
 E:\prog\ST_CSP_projekt\projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\obj\Debug\MainWindow.g.cs
-E:\prog\ST_CSP_projekt\projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\obj\Debug\Window1.g.cs
 E:\prog\ST_CSP_projekt\projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\obj\Debug\Window2.g.cs
 E:\prog\ST_CSP_projekt\projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\obj\Debug\App.g.cs
 E:\prog\ST_CSP_projekt\projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\obj\Debug\ST_CSP_Projekt_MarkupCompile.cache
 E:\prog\ST_CSP_projekt\projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\obj\Debug\ST_CSP_Projekt_MarkupCompile.lref
 E:\prog\ST_CSP_projekt\projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\obj\Debug\MainWindow.baml
-E:\prog\ST_CSP_projekt\projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\obj\Debug\Window1.baml
 E:\prog\ST_CSP_projekt\projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\obj\Debug\Window2.baml
 E:\prog\ST_CSP_projekt\projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\obj\Debug\ST_CSP_Projekt.g.resources
 E:\prog\ST_CSP_projekt\projekt\ST_CSP_Projekt-master\ST_CSP_Projekt-master\ST_CSP_Projekt\obj\Debug\ST_CSP_Projekt.Properties.Resources.resources

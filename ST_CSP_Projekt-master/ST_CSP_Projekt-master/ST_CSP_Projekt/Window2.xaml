@@ -146,7 +146,7 @@
                     <ImageBrush ImageSource="facebook.png" Stretch="Uniform"/>
                 </Button.Background>
             </Button>
-            <Button Style="{StaticResource Logocustom}" x:Name="user" HorizontalAlignment="Left" Margin="1485,38,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="user_Click">
+            <Button Style="{StaticResource Logocustom}" x:Name="user" HorizontalAlignment="Left" Margin="1485,38,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="user.png" Stretch="Uniform"/>
                 </Button.Background>
