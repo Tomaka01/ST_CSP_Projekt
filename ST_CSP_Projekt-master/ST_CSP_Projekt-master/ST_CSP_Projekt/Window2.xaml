@@ -63,7 +63,7 @@
             </Setter>
         </Style>
     </Window.Resources>
-    <Grid VerticalAlignment="Center" Height="1000" Width="1700" OpacityMask="#FF1ED760" Background="#FF838383">
+    <Grid x:Name="Shop_alap_Grid" VerticalAlignment="Center" Height="1000" Width="1700" OpacityMask="#FF1ED760" Background="#FF838383">
         <Grid x:Name="Kosar_Grid" Height="1000" Width="1700">
             <ListBox x:Name="etelkosar" HorizontalAlignment="Left" Height="226" Margin="153,312,0,0" VerticalAlignment="Top" Width="256" FontFamily="Broadway" FontSize="18"/>
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="kosar_back" Content="Vissza" HorizontalAlignment="Left" Margin="50,878,0,0" VerticalAlignment="Top" Width="200" Height="80
@@ -123,7 +123,7 @@
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel10gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="275,846,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel10gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel11gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="749,846,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel11gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel12gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="1168,846,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel12gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
-            <Button Style="{StaticResource CustomButtonStyle}" x:Name="shop2_back_button" Content="&lt;" HorizontalAlignment="Left" Margin="0,607,0,0" VerticalAlignment="Top" Width="20" FontSize="18" Height="50" Click="shop2_back_button_Click" FontFamily="Broadway" Foreground="Black"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="shop2_back_button" Content="&lt;" HorizontalAlignment="Left" Margin="10,619,0,0" VerticalAlignment="Top" Width="20" FontSize="18" Height="50" Click="shop2_back_button_Click" FontFamily="Broadway" Foreground="Black"/>
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="shop2_kosar" Content="Kosár" HorizontalAlignment="Left" Margin="1465,235,0,0" VerticalAlignment="Top" Width="200" Height="100" Click="shop2_kosar_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="shop2_kilepes" Content="Kilépés" HorizontalAlignment="Left" Margin="1465,871,0,0" VerticalAlignment="Top" Width="200" Height="100" Click="shop2_kilepes_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
             <Image Margin="257,211,1243,589" Source="pasta.png" Width="200" Height="200" Stretch="Fill"/>
@@ -178,5 +178,11 @@
             </Button>
             <Label x:Name="username" Content="" HorizontalAlignment="Left" Margin="1511,143,0,0" Width="100" Height="40" VerticalAlignment="Top" FontFamily="Broadway" FontSize="18"/>
         </Grid>
+        <Image Margin="101,694,1499,206" Width="100" Height="100" Source="diet.png" Stretch="Fill"/>
+        <Image Margin="640,250,960,650" Width="100" Height="100" Source="hot-pot.png" Stretch="Fill"/>
+        <Image Margin="1524,333,76,567" Width="100" Height="100" Source="fast-food.png" Stretch="Fill"/>
+        <Image Margin="1378,774,222,126" Width="100" Height="100" Source="135763.png" Stretch="Fill"/>
+        <Image Margin="482,774,1118,126" Width="100" Height="100" Source="diet (1).png" Stretch="Fill"/>
+        <Image Margin="640,542,960,358" Width="100" Height="100" Source="dish (1).png" Stretch="Fill"/>
     </Grid>
 </Window>
