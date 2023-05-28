@@ -146,5 +146,26 @@
   <ItemGroup>
     <Resource Include="instagram.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="hamburger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sushi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="curry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="taco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="chicken-leg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="user.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

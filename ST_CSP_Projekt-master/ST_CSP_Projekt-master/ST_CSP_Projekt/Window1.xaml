@@ -65,21 +65,21 @@
     </Window.Resources>
     <Grid VerticalAlignment="Center" Height="1000" Width="1700" OpacityMask="#FF1ED760" Background="#FF838383">
 
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="28" Margin="882,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontFamily="Broadway" FontSize="18"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="32" Margin="882,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontFamily="Broadway" FontSize="18"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="32" Margin="882,495,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontFamily="Broadway" FontSize="18"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="882,376,0,0" VerticalAlignment="Top" Width="200" Height="37" FontFamily="Broadway" FontSize="18"/>
-        <PasswordBox x:Name="passwordBox1" HorizontalAlignment="Left" Margin="882,434,0,0" VerticalAlignment="Top" Width="200" Height="34" FontFamily="Broadway" FontSize="18"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="28" Margin="882,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" FontFamily="Broadway" FontSize="18"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="32" Margin="882,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" FontFamily="Broadway" FontSize="18"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="32" Margin="882,495,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" FontFamily="Broadway" FontSize="18"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="882,376,0,0" VerticalAlignment="Top" Width="256" Height="37" FontFamily="Broadway" FontSize="18"/>
+        <PasswordBox x:Name="passwordBox1" HorizontalAlignment="Left" Margin="882,434,0,0" VerticalAlignment="Top" Width="256" Height="34" FontFamily="Broadway" FontSize="18"/>
         <Label x:Name="label" Content="Felhasználónév:" HorizontalAlignment="Left" Margin="656,272,0,0" VerticalAlignment="Top" Width="195" Height="33" FontFamily="Broadway" FontSize="20"/>
         <Label x:Name="label_Copy" Content="Email-cím:" HorizontalAlignment="Left" Margin="656,326,0,0" VerticalAlignment="Top" Width="157" Height="35" FontFamily="Broadway" FontSize="20"/>
         <Label x:Name="label1" Content="Jelszó:" HorizontalAlignment="Left" Margin="656,376,0,0" VerticalAlignment="Top" Width="138" Height="35" FontFamily="Broadway" FontSize="20" RenderTransformOrigin="0.094,0.486"/>
         <Label x:Name="label2" Content="Jelszó mégegyszer:" HorizontalAlignment="Left" Margin="656,434,0,0" VerticalAlignment="Top" Width="220" Height="34" FontFamily="Broadway" FontSize="20"/>
         <Label x:Name="label3" Content="Életkor:" HorizontalAlignment="Left" Margin="656,493,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="138" Height="34" FontFamily="Broadway" FontSize="20"/>
         <RadioButton x:Name="radioButton" Content="Férfi" HorizontalAlignment="Left" Margin="882,556,0,0" VerticalAlignment="Top" Height="20" Width="70" FontFamily="Broadway" FontSize="20"/>
-        <RadioButton x:Name="radioButton1" Content="Nő" HorizontalAlignment="Left" Margin="882,601,0,0" VerticalAlignment="Top" Width="70" Height="20" FontFamily="Broadway" FontSize="20"/>
+        <RadioButton x:Name="radioButton1" Content="Nő" HorizontalAlignment="Left" Margin="1022,556,0,0" VerticalAlignment="Top" Width="70" Height="20" FontFamily="Broadway" FontSize="20"/>
         <Label x:Name="label4" Content="Nem:" HorizontalAlignment="Left" Margin="656,550,0,0" VerticalAlignment="Top" Width="99" Height="34" FontFamily="Broadway" FontSize="20"/>
-        <Button Style="{StaticResource CustomButtonStyle}" x:Name="button" Content="Regisztrálás" HorizontalAlignment="Left" Margin="730,720,0,0" VerticalAlignment="Top" Width="238" Height="69" Click="button_Click" FontFamily="Broadway" FontSize="18"/>
-        <Button Style="{StaticResource CustomButtonStyle}" x:Name="button3" Content="Vissza" HorizontalAlignment="Left" Margin="40,882,0,0" VerticalAlignment="Top" Width="200" Height="47" Click="button3_Click" FontFamily="Broadway" FontSize="18"/>
+        <Button Style="{StaticResource CustomButtonStyle}" x:Name="button" Content="Regisztrálás" HorizontalAlignment="Left" Margin="766,651,0,0" VerticalAlignment="Top" Width="238" Height="69" Click="button_Click" FontFamily="Broadway" FontSize="18" Background="#FF1ED760" Foreground="Black"/>
+        <Button Style="{StaticResource CustomButtonStyle}" x:Name="button3" Content="Vissza" HorizontalAlignment="Left" Margin="40,882,0,0" VerticalAlignment="Top" Width="200" Height="47" Click="button3_Click" FontFamily="Broadway" FontSize="18" Background="#FF1ED760" Foreground="Black"/>
         <Image Margin="1417,261,175,608" Width="100" Height="100" Source="fast-food.png" Stretch="Fill"/>
         <Image Margin="109,538,1483,331" Width="100" Height="100" Source="diet.png" Stretch="Fill"/>
         <Image Margin="794,829,798,40" Width="100" Height="100" Source="diet (1).png" Stretch="Fill"/>

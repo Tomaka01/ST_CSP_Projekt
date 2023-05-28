@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace ST_CSP_Projekt
 {
@@ -28,6 +29,7 @@ namespace ST_CSP_Projekt
             Gridgomb.Visibility = Visibility.Visible;
             Kosar.Visibility = Visibility.Hidden;
             Gridgombok.Visibility = Visibility.Hidden;
+            Logo.Visibility = Visibility.Visible;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -35,6 +37,7 @@ namespace ST_CSP_Projekt
             Gridgomb.Visibility = Visibility.Hidden;
             Kosar.Visibility = Visibility.Hidden;
             Gridgombok.Visibility = Visibility.Visible;
+            Logo.Visibility = Visibility.Visible;
         }
 
         private void kosar_Click(object sender, RoutedEventArgs e)
@@ -44,6 +47,7 @@ namespace ST_CSP_Projekt
             Gridgomb.Visibility = Visibility.Hidden;
             Kosar.Visibility = Visibility.Visible;
             Gridgombok.Visibility = Visibility.Hidden;
+            Logo.Visibility = Visibility.Visible;
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
@@ -94,6 +98,7 @@ namespace ST_CSP_Projekt
             Gridgomb.Visibility = Visibility.Visible;
             Kosar.Visibility = Visibility.Hidden;
             Gridgombok.Visibility = Visibility.Hidden;
+            Logo.Visibility = Visibility.Visible;
 
         }
 
@@ -292,6 +297,7 @@ namespace ST_CSP_Projekt
             Gridgomb.Visibility = Visibility.Visible;
             Kosar.Visibility = Visibility.Hidden;
             Gridgombok.Visibility = Visibility.Hidden;
+            Logo.Visibility = Visibility.Visible;
         }
 
         private void buttonn1_Click(object sender, RoutedEventArgs e)
@@ -300,6 +306,7 @@ namespace ST_CSP_Projekt
             Gridgomb.Visibility = Visibility.Hidden;
             Kosar.Visibility = Visibility.Visible;
             Gridgombok.Visibility = Visibility.Hidden;
+            Logo.Visibility = Visibility.Visible;
         }
 
         private void rendeles_Click(object sender, RoutedEventArgs e)
@@ -362,5 +369,33 @@ namespace ST_CSP_Projekt
             }
 
         }
+
+        private void logo_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Szeretünk Józsi Bácsi! ;)");
+        }
+
+        private void web_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://premontrei-keszthely.hu");
+        }
+
+        private void facebook_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com/Premontrei.Keszthely");
+        }
+
+        private void insta_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.instagram.com/premontrei_kozepiskola/");
+        }
+
+        /*
+        private void user_Click(object sender, RoutedEventArgs e)
+        {
+            string x = File.ReadAllText(nev + ".txt");
+            string[] fajl = x.Split(';');
+            MessageBox.Show()
+        }*/
     }
 }

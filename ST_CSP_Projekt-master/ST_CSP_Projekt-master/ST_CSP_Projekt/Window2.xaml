@@ -7,52 +7,151 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="Foodify" Height="1000" Width="1700">
-    <Grid Height="881">
-        <Grid x:Name="Kosar" Height="881" Width="1692">
-            <ListBox x:Name="etelkosar" HorizontalAlignment="Left" Height="226" Margin="79,33,0,0" VerticalAlignment="Top" Width="220"/>
-            <Button x:Name="button2" Content="Vissza" HorizontalAlignment="Left" Margin="131,453,0,0" VerticalAlignment="Top" Width="111" Height="53" Click="button2_Click_1"/>
-            <Button x:Name="rendeles" Content="Rendelés&#xD;&#xA;leadása" HorizontalAlignment="Left" Margin="513,355,0,0" VerticalAlignment="Top" Width="111" Height="53" Click="rendeles_Click"/>
-            <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="538,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="538,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="538,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <Label x:Name="label" Content="Település:" HorizontalAlignment="Left" Margin="454,96,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="label1" Content="Irányítószám:" HorizontalAlignment="Left" Margin="453,133,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="label2" Content="Utca:" HorizontalAlignment="Left" Margin="478,178,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" Margin="538,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <Label x:Name="label3" Content="Házszám/emelet:" HorizontalAlignment="Left" Margin="433,222,0,0" VerticalAlignment="Top"/>
-            <RadioButton x:Name="radioButton" Content="Készpénz" HorizontalAlignment="Left" Margin="513,283,0,0" VerticalAlignment="Top"/>
-            <RadioButton x:Name="radioButton1" Content="Bankkártya" HorizontalAlignment="Left" Margin="606,283,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="label4" Content="Fizetési mód:" HorizontalAlignment="Left" Margin="404,277,0,0" VerticalAlignment="Top"/>
+    <Window.Resources>
+        <Style x:Key="CustomButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#FF1ED760"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="MinWidth" Value="100"/>
+            <Setter Property="MinHeight" Value="40"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="20">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="Logocustom" TargetType="Button">
+            <Setter Property="Background" Value="#FF1ED760"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="MinWidth" Value="100"/>
+            <Setter Property="MinHeight" Value="40"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="20">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid VerticalAlignment="Center" Height="1000" Width="1700" OpacityMask="#FF1ED760" Background="#FF838383">
+        <Grid x:Name="Kosar" Height="1000" Width="1700" Visibility="Hidden">
+            <ListBox x:Name="etelkosar" HorizontalAlignment="Left" Height="226" Margin="295,533,0,0" VerticalAlignment="Top" Width="220"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="button2" Content="Vissza" HorizontalAlignment="Left" Margin="335,819,0,0" VerticalAlignment="Top" Width="111" Height="53" Click="button2_Click_1"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="rendeles" Content="Rendelés&#xD;&#xA;leadása" HorizontalAlignment="Left" Margin="1142,797,0,0" VerticalAlignment="Top" Width="111" Height="53" Click="rendeles_Click"/>
+            <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="716,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="716,417,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="716,448,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label x:Name="label" Content="Település:" HorizontalAlignment="Left" Margin="558,386,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="label1" Content="Irányítószám:" HorizontalAlignment="Left" Margin="558,417,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="label2" Content="Utca:" HorizontalAlignment="Left" Margin="558,448,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.473,0.519"/>
+            <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" Margin="716,479,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label x:Name="label3" Content="Házszám/emelet:" HorizontalAlignment="Left" Margin="558,479,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="radioButton" Content="Készpénz" HorizontalAlignment="Left" Margin="1037,595,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="radioButton1" Content="Bankkártya" HorizontalAlignment="Left" Margin="1202,581,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="label4" Content="Fizetési mód:" HorizontalAlignment="Left" Margin="850,581,0,0" VerticalAlignment="Top"/>
             <TextBlock x:Name="osszegg" HorizontalAlignment="Left" Margin="10,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365" Height="125"/>
-            <Label x:Name="label5" Content="Összesen:" HorizontalAlignment="Left" Margin="10,259,0,0" VerticalAlignment="Top"/>
-            <Button x:Name="delete" Content="Törlés" HorizontalAlignment="Left" Margin="335,118,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="delete_Click"/>
+            <Label x:Name="label5" Content="Összesen:" HorizontalAlignment="Left" Margin="117,779,0,0" VerticalAlignment="Top"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="delete" Content="Törlés" HorizontalAlignment="Left" Margin="1037,397,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="delete_Click"/>
 
         </Grid>
-        <Grid x:Name="Gridgomb" Margin="0,88,0,-88" Height="881" Width="1692" Grid.ColumnSpan="2" Visibility="Hidden">
-            <Button x:Name="etel1gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="109,128,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel1gomb_Click"/>
-            <Button x:Name="etel2gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="336,128,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel2gomb_Click"/>
-            <Button x:Name="etel3gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="566,128,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel3gomb_Click"/>
-            <Button x:Name="etel4gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="109,301,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel4gomb_Click"/>
-            <Button x:Name="etel5gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="336,301,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel5gomb_Click"/>
-            <Button x:Name="etel6gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="566,301,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel6gomb_Click"/>
-            <Button x:Name="button" Content="&gt;" HorizontalAlignment="Left" Margin="731,215,0,0" VerticalAlignment="Top" Width="39" FontSize="24" Height="44" Click="button_Click"/>
-            <Button x:Name="kosar" Content="Kosár" HorizontalAlignment="Left" Margin="695,27,0,0" VerticalAlignment="Top" Width="75" Height="29" Click="kosar_Click"/>
-            <Button x:Name="kilepes" Content="Kilépés" HorizontalAlignment="Left" Margin="327,373,0,0" VerticalAlignment="Top" Width="120" Height="36" Click="button2_Click"/>
+        <Grid x:Name="Gridgomb" Height="1000" Width="1700">
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel1gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="109,467,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel1gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel2gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="585,467,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel2gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel3gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="1064,467,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel3gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel4gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="109,809,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel4gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel5gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="585,809,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel5gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel6gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="1064,809,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel6gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="button" Content="&gt;" HorizontalAlignment="Left" Margin="1565,621,0,0" VerticalAlignment="Top" Width="20" FontSize="18" Height="50" Click="button_Click" FontFamily="Broadway" Foreground="Black"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="kosar" Content="Kosár" HorizontalAlignment="Left" Margin="1465,235,0,0" VerticalAlignment="Top" Width="200" Height="100" Click="kosar_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="kilepes" Content="Kilépés" HorizontalAlignment="Left" Margin="1465,871,0,0" VerticalAlignment="Top" Width="200" Height="100" Click="button2_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
+            <Image Margin="91,213,1409,587" Width="200" Height="200" Source="pizza.png" Stretch="Fill"/>
+            <Image Margin="568,213,932,587" Width="200" Height="200" Source="hamburger.png" Stretch="Fill"/>
+            <Image Margin="1046,235,454,565" Width="200" Height="200" Source="sushi.png" Stretch="Fill"/>
+            <Image Margin="91,562,1409,238" Width="200" Height="200" Source="curry.png" Stretch="Fill"/>
+            <Image Margin="568,562,932,238" Width="200" Height="200" Source="taco.png" Stretch="Fill"/>
+            <Image Margin="1046,562,454,238" Width="200" Height="200" Source="chicken-leg.png" Stretch="Fill"/>
+            <Label Content="Pizza" HorizontalAlignment="Left" Margin="151,423,0,0" VerticalAlignment="Top" Width="74" FontFamily="Broadway" FontSize="20" Height="34"/>
+            <Label Content="Hamburger" HorizontalAlignment="Left" Margin="598,423,0,0" VerticalAlignment="Top" Width="137" FontFamily="Broadway" FontSize="20" Height="34"/>
+            <Label Content="Sushi" HorizontalAlignment="Left" Margin="1112,423,0,0" VerticalAlignment="Top" Width="74" FontFamily="Broadway" FontSize="20" Height="34"/>
+            <Label Content="Thai Curry" HorizontalAlignment="Left" Margin="123,767,0,0" VerticalAlignment="Top" Width="134" FontFamily="Broadway" FontSize="20" Height="34"/>
+            <Label Content="Tacos" HorizontalAlignment="Left" Margin="630,767,0,0" VerticalAlignment="Top" Width="74" FontFamily="Broadway" FontSize="20" Height="34"/>
+            <Label Content="Sült csirke" HorizontalAlignment="Left" Margin="1080,767,0,0" VerticalAlignment="Top" Width="134" FontFamily="Broadway" FontSize="20" Height="34"/>
 
 
         </Grid>
-        <Grid x:Name="Gridgombok" Margin="0,88,0,-88" Height="881" Width="1692" Grid.ColumnSpan="2" Visibility="Hidden">
-            <Button x:Name="etel7gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="109,128,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel7gomb_Click"/>
-            <Button x:Name="etel8gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="336,128,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel8gomb_Click"/>
-            <Button x:Name="etel9gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="566,128,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel9gomb_Click"/>
-            <Button x:Name="etel10gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="109,301,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel10gomb_Click"/>
-            <Button x:Name="etel11gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="336,301,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel11gomb_Click"/>
-            <Button x:Name="etel12gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="566,301,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel12gomb_Click"/>
-            <Button x:Name="buttonn" Content="&lt;" HorizontalAlignment="Left" Margin="10,215,0,0" VerticalAlignment="Top" Width="39" FontSize="24" Height="44" Click="buttonn_Click"/>
-            <Button x:Name="buttonn1" Content="Kosár" HorizontalAlignment="Left" Margin="695,27,0,0" VerticalAlignment="Top" Width="75" Height="29" Click="buttonn1_Click"/>
-            <Button x:Name="kilepess" Content="Kilépés" HorizontalAlignment="Left" Margin="327,373,0,0" VerticalAlignment="Top" Width="120" Height="36" Click="button2_Click"/>
+        <Grid x:Name="Gridgombok" Height="1000" Width="1700" Grid.ColumnSpan="2" Visibility="Hidden">
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel7gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="336,483,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel7gomb_Click"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel8gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="815,504,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel8gomb_Click"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel9gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="1328,516,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel9gomb_Click"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel10gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="336,691,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel10gomb_Click"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel11gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="815,691,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel11gomb_Click"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel12gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="1328,691,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="etel12gomb_Click"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="buttonn" Content="&lt;" HorizontalAlignment="Left" Margin="10,483,0,0" VerticalAlignment="Top" Width="39" FontSize="24" Height="44" Click="buttonn_Click"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="buttonn1" Content="Kosár" HorizontalAlignment="Left" Margin="1485,399,0,0" VerticalAlignment="Top" Width="75" Height="29" Click="buttonn1_Click"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="kilepess" Content="Kilépés" HorizontalAlignment="Left" Margin="795,803,0,0" VerticalAlignment="Top" Width="120" Height="36" Click="button2_Click"/>
 
         </Grid>
-
+        <Grid x:Name="Logo" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="1700" Background="#FF1ED760" OpacityMask="#FF1ED760">
+            <Button x:Name="logo" Style="{StaticResource Logocustom}" Content="" HorizontalAlignment="Left" Margin="21,38,0,0" VerticalAlignment="Top" Width="150" Height="150
+                    " Click="logo_Click" BorderBrush="{x:Null}">
+                <Button.Background>
+                    <ImageBrush ImageSource="fast-delivery.png"/>
+                </Button.Background>
+            </Button>
+            <Label Content="Foodify" HorizontalAlignment="Left" Margin="176,38,0,0" VerticalAlignment="Top" Height="52" Width="157" FontSize="36" FontFamily="Broadway"/>
+            <Label Content="Your passport to a world of tasty possibilities." HorizontalAlignment="Left" Margin="176,95,0,0" VerticalAlignment="Top" Height="36" Width="453" FontSize="18" FontFamily="Broadway"/>
+            <Button Style="{StaticResource Logocustom}" x:Name="insta" HorizontalAlignment="Left" Margin="1238,61,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="insta_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="instagram.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Style="{StaticResource Logocustom}" x:Name="web" HorizontalAlignment="Left" Margin="756,61,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="web_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="world-wide-web.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Style="{StaticResource Logocustom}" x:Name="facebook" HorizontalAlignment="Left" Margin="985,61,0,0" VerticalAlignment="Top" Width="150" Height="100
+                    " BorderBrush="{x:Null}" Click="facebook_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="facebook.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Style="{StaticResource Logocustom}" x:Name="user" HorizontalAlignment="Left" Margin="1485,38,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="user_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="user.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Label x:Name="username" Content="" HorizontalAlignment="Left" Margin="1511,143,0,0" Width="100" Height="40" VerticalAlignment="Top" FontFamily="Broadway" FontSize="18"/>
+        </Grid>
     </Grid>
 </Window>
