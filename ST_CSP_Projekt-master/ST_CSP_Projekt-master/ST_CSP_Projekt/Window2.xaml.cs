@@ -29,7 +29,9 @@ namespace ST_CSP_Projekt
             Shop1_Grid.Visibility = Visibility.Visible;
             Kosar_Grid.Visibility = Visibility.Hidden;
             Shop2_Grid.Visibility = Visibility.Hidden;
-            Logo.Visibility = Visibility.Visible;
+            Kosar_Logo_Grid.Visibility = Visibility.Hidden;
+            Shop2_Logo_Grid.Visibility = Visibility.Hidden;
+            Shop1_Logo_Grid.Visibility = Visibility.Visible;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -37,7 +39,9 @@ namespace ST_CSP_Projekt
             Shop1_Grid.Visibility = Visibility.Hidden;
             Kosar_Grid.Visibility = Visibility.Hidden;
             Shop2_Grid.Visibility = Visibility.Visible;
-            Logo.Visibility = Visibility.Visible;
+            Kosar_Logo_Grid.Visibility = Visibility.Hidden;
+            Shop2_Logo_Grid.Visibility = Visibility.Visible;
+            Shop1_Logo_Grid.Visibility = Visibility.Hidden;
         }
 
         private void kosar_Click(object sender, RoutedEventArgs e)
@@ -46,7 +50,9 @@ namespace ST_CSP_Projekt
             Shop1_Grid.Visibility = Visibility.Hidden;
             Kosar_Grid.Visibility = Visibility.Visible;
             Shop2_Grid.Visibility = Visibility.Hidden;
-            Logo.Visibility = Visibility.Visible;
+            Kosar_Logo_Grid.Visibility = Visibility.Visible;
+            Shop2_Logo_Grid.Visibility = Visibility.Hidden;
+            Shop1_Logo_Grid.Visibility = Visibility.Hidden;
         }
 
         private void shop2_kilepes_Click(object sender, RoutedEventArgs e)
@@ -97,8 +103,9 @@ namespace ST_CSP_Projekt
             Shop1_Grid.Visibility = Visibility.Visible;
             Kosar_Grid.Visibility = Visibility.Hidden;
             Shop2_Grid.Visibility = Visibility.Hidden;
-            Logo.Visibility = Visibility.Visible;
-
+            Kosar_Logo_Grid.Visibility = Visibility.Hidden;
+            Shop2_Logo_Grid.Visibility = Visibility.Hidden;
+            Shop1_Logo_Grid.Visibility = Visibility.Visible;
         }
 
         private void etel3gomb_Click(object sender, RoutedEventArgs e)
@@ -296,7 +303,9 @@ namespace ST_CSP_Projekt
             Shop1_Grid.Visibility = Visibility.Visible;
             Kosar_Grid.Visibility = Visibility.Hidden;
             Shop2_Grid.Visibility = Visibility.Hidden;
-            Logo.Visibility = Visibility.Visible;
+            Kosar_Logo_Grid.Visibility = Visibility.Hidden;
+            Shop2_Logo_Grid.Visibility = Visibility.Hidden;
+            Shop1_Logo_Grid.Visibility = Visibility.Visible;
         }
 
         private void shop2_kosar_Click(object sender, RoutedEventArgs e)
@@ -305,7 +314,9 @@ namespace ST_CSP_Projekt
             Shop1_Grid.Visibility = Visibility.Hidden;
             Kosar_Grid.Visibility = Visibility.Visible;
             Shop2_Grid.Visibility = Visibility.Hidden;
-            Logo.Visibility = Visibility.Visible;
+            Kosar_Logo_Grid.Visibility = Visibility.Visible;
+            Shop2_Logo_Grid.Visibility = Visibility.Hidden;
+            Shop1_Logo_Grid.Visibility = Visibility.Hidden;
         }
 
         private void kosar_rendeles_Click(object sender, RoutedEventArgs e)
@@ -355,32 +366,79 @@ namespace ST_CSP_Projekt
             kosar_osszeg.Text = "Végösszeg: 0 Ft "+" "+" Termékek száma: 0 db";
             osszegdb = 0;
             osszeg = 0;
+            foods.Clear();
         }
 
-        private void logo_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Szeretünk Józsi Bácsi! ;)");
-        }
 
-        private void web_Click(object sender, RoutedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://premontrei-keszthely.hu");
-        }
-
-        private void facebook_Click(object sender, RoutedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://www.facebook.com/Premontrei.Keszthely");
-        }
-
-        private void insta_Click(object sender, RoutedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://www.instagram.com/premontrei_kozepiskola/");
-        }
 
         private void kilepes_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
+
+        private void shop2_web_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://premontrei-keszthely.hu");
+        }
+
+        private void shop2_facebook_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com/Premontrei.Keszthely");
+        }
+
+        private void shop2_insta_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.instagram.com/premontrei_kozepiskola/");
+        }
+
+        private void shop1_logo_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Szeretünk Józsi Bácsi! ;)");
+        }
+
+        private void shop1_web_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://premontrei-keszthely.hu");
+        }
+
+        private void shop1_facebook_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com/Premontrei.Keszthely");
+        }
+
+        private void shop1_insta_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.instagram.com/premontrei_kozepiskola/");
+        }
+
+
+        private void kosar_web_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://premontrei-keszthely.hu");
+        }
+
+        private void kosar_facebook_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com/Premontrei.Keszthely");
+        }
+
+        private void kosar_insta_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.instagram.com/premontrei_kozepiskola/");
+        }
+
+        private void kosar_logo_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Szeretünk Józsi Bácsi! ;)");
+        }
+
+        private void shop2_logo_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Szeretünk Józsi Bácsi! ;)");
+        }
+
+
+
 
         /*
         private void user_Click(object sender, RoutedEventArgs e)

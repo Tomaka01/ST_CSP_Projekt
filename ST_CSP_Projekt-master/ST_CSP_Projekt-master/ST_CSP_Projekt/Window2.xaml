@@ -64,7 +64,7 @@
         </Style>
     </Window.Resources>
     <Grid x:Name="Shop_alap_Grid" VerticalAlignment="Center" Height="1000" Width="1700" OpacityMask="#FF1ED760" Background="#FF838383">
-        <Grid x:Name="Kosar_Grid" Height="1000" Width="1700">
+        <Grid x:Name="Kosar_Grid" Height="1000" Width="1700" Visibility="Hidden">
             <ListBox x:Name="etelkosar" HorizontalAlignment="Left" Height="226" Margin="153,312,0,0" VerticalAlignment="Top" Width="256" FontFamily="Broadway" FontSize="18"/>
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="kosar_back" Content="Vissza" HorizontalAlignment="Left" Margin="50,878,0,0" VerticalAlignment="Top" Width="200" Height="80
                     " Click="kosar_back_Click_1" Foreground="Black"/>
@@ -89,6 +89,38 @@
             <Image Margin="1378,774,222,126" Width="100" Height="100" Source="135763.png" Stretch="Fill"/>
             <Image Margin="482,774,1118,126" Width="100" Height="100" Source="diet (1).png" Stretch="Fill"/>
             <Image Margin="640,542,960,358" Width="100" Height="100" Source="dish (1).png" Stretch="Fill"/>
+            <Grid x:Name="Kosar_Logo_Grid" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="1700" Background="#FF1ED760" OpacityMask="#FF1ED760">
+                <Button x:Name="kosar_logo" Style="{StaticResource Logocustom}" Content="" HorizontalAlignment="Left" Margin="21,38,0,0" VerticalAlignment="Top" Width="150" Height="150
+                    " Click="kosar_logo_Click" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="fast-delivery.png"/>
+                    </Button.Background>
+                </Button>
+                <Label Content="Foodify" HorizontalAlignment="Left" Margin="176,38,0,0" VerticalAlignment="Top" Height="52" Width="157" FontSize="36" FontFamily="Broadway"/>
+                <Label Content="Your passport to a world of tasty possibilities." HorizontalAlignment="Left" Margin="176,95,0,0" VerticalAlignment="Top" Height="36" Width="453" FontSize="18" FontFamily="Broadway"/>
+                <Button Style="{StaticResource Logocustom}" x:Name="kosar_insta" HorizontalAlignment="Left" Margin="1238,61,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="shop2_insta_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="instagram.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+                <Button Style="{StaticResource Logocustom}" x:Name="kosar_web" HorizontalAlignment="Left" Margin="756,61,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="kosar_web_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="world-wide-web.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+                <Button Style="{StaticResource Logocustom}" x:Name="kosar_facebook" HorizontalAlignment="Left" Margin="985,61,0,0" VerticalAlignment="Top" Width="150" Height="100
+                    " BorderBrush="{x:Null}" Click="kosar_facebook_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="facebook.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+                <Button Style="{StaticResource Logocustom}" x:Name="kosar_user" HorizontalAlignment="Left" Margin="1485,38,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="user.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+                <Label x:Name="kosar_username" Content="" HorizontalAlignment="Left" Margin="1511,143,0,0" Width="100" Height="40" VerticalAlignment="Top" FontFamily="Broadway" FontSize="18"/>
+            </Grid>
         </Grid>
         <Grid x:Name="Shop1_Grid" Height="1000" Width="1700" Visibility="Hidden">
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel1gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="109,496,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel1gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
@@ -118,10 +150,41 @@
             <Label x:Name="shop1_curryar" Content="3200Ft" HorizontalAlignment="Left" Margin="156,836,0,0" VerticalAlignment="Top" FontFamily="Broadway" FontSize="14"/>
             <Label x:Name="shop1_tacosar" Content="2200Ft" HorizontalAlignment="Left" Margin="635,836,0,0" VerticalAlignment="Top" FontFamily="Broadway" FontSize="14"/>
             <Label x:Name="shop1_csirkear" Content="4200Ft" HorizontalAlignment="Left" Margin="1112,836,0,0" VerticalAlignment="Top" FontFamily="Broadway" FontSize="14"/>
-
+            <Grid x:Name="Shop1_Logo_Grid" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="1700" Background="#FF1ED760" OpacityMask="#FF1ED760">
+                <Button x:Name="shop1_logo" Style="{StaticResource Logocustom}" Content="" HorizontalAlignment="Left" Margin="21,38,0,0" VerticalAlignment="Top" Width="150" Height="150
+                    " Click="shop1_logo_Click" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="fast-delivery.png"/>
+                    </Button.Background>
+                </Button>
+                <Label Content="Foodify" HorizontalAlignment="Left" Margin="176,38,0,0" VerticalAlignment="Top" Height="52" Width="157" FontSize="36" FontFamily="Broadway"/>
+                <Label Content="Your passport to a world of tasty possibilities." HorizontalAlignment="Left" Margin="176,95,0,0" VerticalAlignment="Top" Height="36" Width="453" FontSize="18" FontFamily="Broadway"/>
+                <Button Style="{StaticResource Logocustom}" x:Name="shop1_insta" HorizontalAlignment="Left" Margin="1238,61,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="shop1_insta_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="instagram.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+                <Button Style="{StaticResource Logocustom}" x:Name="shop1_web" HorizontalAlignment="Left" Margin="756,61,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="shop1_web_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="world-wide-web.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+                <Button Style="{StaticResource Logocustom}" x:Name="shop1_facebook" HorizontalAlignment="Left" Margin="985,61,0,0" VerticalAlignment="Top" Width="150" Height="100
+                    " BorderBrush="{x:Null}" Click="shop1_facebook_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="facebook.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+                <Button Style="{StaticResource Logocustom}" x:Name="shop1_user" HorizontalAlignment="Left" Margin="1485,38,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="user.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+                <Label x:Name="shop1_username" Content="" HorizontalAlignment="Left" Margin="1511,143,0,0" Width="100" Height="40" VerticalAlignment="Top" FontFamily="Broadway" FontSize="18"/>
+            </Grid>
 
         </Grid>
-        <Grid x:Name="Shop2_Grid" Height="1000" Width="1700" Grid.ColumnSpan="2" Visibility="Hidden">
+        <Grid x:Name="Shop2_Grid" Height="1000" Width="1700" Grid.ColumnSpan="2">
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel7gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="275,480,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel7gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel8gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="749,480,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel8gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="etel9gomb" Content="Kosárba" HorizontalAlignment="Left" Margin="1168,480,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="etel9gomb_Click" FontFamily="Broadway" FontSize="18" Foreground="Black"/>
@@ -149,39 +212,38 @@
             <Label x:Name="shop2_colaar" Content="800Ft" HorizontalAlignment="Left" Margin="332,810,0,0" VerticalAlignment="Top" FontFamily="Broadway" FontSize="14"/>
             <Label x:Name="shop2_spritear" Content="800Ft" HorizontalAlignment="Left" Margin="806,810,0,0" VerticalAlignment="Top" FontFamily="Broadway" FontSize="14"/>
             <Label x:Name="shop2_vizar" Content="500Ft" HorizontalAlignment="Left" Margin="1227,810,0,0" VerticalAlignment="Top" FontFamily="Broadway" FontSize="14"/>
-
-        </Grid>
-        <Grid x:Name="Logo" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="1700" Background="#FF1ED760" OpacityMask="#FF1ED760">
-            <Button x:Name="logo" Style="{StaticResource Logocustom}" Content="" HorizontalAlignment="Left" Margin="21,38,0,0" VerticalAlignment="Top" Width="150" Height="150
-                    " Click="logo_Click" BorderBrush="{x:Null}">
-                <Button.Background>
-                    <ImageBrush ImageSource="fast-delivery.png"/>
-                </Button.Background>
-            </Button>
-            <Label Content="Foodify" HorizontalAlignment="Left" Margin="176,38,0,0" VerticalAlignment="Top" Height="52" Width="157" FontSize="36" FontFamily="Broadway"/>
-            <Label Content="Your passport to a world of tasty possibilities." HorizontalAlignment="Left" Margin="176,95,0,0" VerticalAlignment="Top" Height="36" Width="453" FontSize="18" FontFamily="Broadway"/>
-            <Button Style="{StaticResource Logocustom}" x:Name="insta" HorizontalAlignment="Left" Margin="1238,61,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="insta_Click">
-                <Button.Background>
-                    <ImageBrush ImageSource="instagram.png" Stretch="Uniform"/>
-                </Button.Background>
-            </Button>
-            <Button Style="{StaticResource Logocustom}" x:Name="web" HorizontalAlignment="Left" Margin="756,61,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="web_Click">
-                <Button.Background>
-                    <ImageBrush ImageSource="world-wide-web.png" Stretch="Uniform"/>
-                </Button.Background>
-            </Button>
-            <Button Style="{StaticResource Logocustom}" x:Name="facebook" HorizontalAlignment="Left" Margin="985,61,0,0" VerticalAlignment="Top" Width="150" Height="100
-                    " BorderBrush="{x:Null}" Click="facebook_Click">
-                <Button.Background>
-                    <ImageBrush ImageSource="facebook.png" Stretch="Uniform"/>
-                </Button.Background>
-            </Button>
-            <Button Style="{StaticResource Logocustom}" x:Name="user" HorizontalAlignment="Left" Margin="1485,38,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}">
-                <Button.Background>
-                    <ImageBrush ImageSource="user.png" Stretch="Uniform"/>
-                </Button.Background>
-            </Button>
-            <Label x:Name="username" Content="" HorizontalAlignment="Left" Margin="1511,143,0,0" Width="100" Height="40" VerticalAlignment="Top" FontFamily="Broadway" FontSize="18"/>
+            <Grid x:Name="Shop2_Logo_Grid" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="1700" Background="#FF1ED760" OpacityMask="#FF1ED760">
+                <Button x:Name="shop2_logo" Style="{StaticResource Logocustom}" Content="" HorizontalAlignment="Left" Margin="21,38,0,0" VerticalAlignment="Top" Width="150" Height="150
+                    " Click="shop2_logo_Click" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="fast-delivery.png"/>
+                    </Button.Background>
+                </Button>
+                <Label Content="Foodify" HorizontalAlignment="Left" Margin="176,38,0,0" VerticalAlignment="Top" Height="52" Width="157" FontSize="36" FontFamily="Broadway"/>
+                <Label Content="Your passport to a world of tasty possibilities." HorizontalAlignment="Left" Margin="176,95,0,0" VerticalAlignment="Top" Height="36" Width="453" FontSize="18" FontFamily="Broadway"/>
+                <Button Style="{StaticResource Logocustom}" x:Name="shop2_insta" HorizontalAlignment="Left" Margin="1238,61,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="shop2_insta_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="instagram.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+                <Button Style="{StaticResource Logocustom}" x:Name="shop2_web" HorizontalAlignment="Left" Margin="756,61,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="shop2_web_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="world-wide-web.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+                <Button Style="{StaticResource Logocustom}" x:Name="shop2_facebook" HorizontalAlignment="Left" Margin="985,61,0,0" VerticalAlignment="Top" Width="150" Height="100
+                    " BorderBrush="{x:Null}" Click="shop2_facebook_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="facebook.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+                <Button Style="{StaticResource Logocustom}" x:Name="shop2_user" HorizontalAlignment="Left" Margin="1485,38,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="user.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+                <Label x:Name="shop2_username" Content="" HorizontalAlignment="Left" Margin="1511,143,0,0" Width="100" Height="40" VerticalAlignment="Top" FontFamily="Broadway" FontSize="18"/>
+            </Grid>
         </Grid>
     </Grid>
 </Window>
