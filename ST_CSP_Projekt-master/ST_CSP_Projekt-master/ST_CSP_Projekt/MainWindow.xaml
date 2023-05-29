@@ -159,7 +159,7 @@
             </Grid>
         </Grid>
         <Grid x:Name="Kosar_Grid" Height="1000" Width="1700" Visibility="Hidden">
-            <ListBox x:Name="etelkosar" HorizontalAlignment="Left" Height="226" Margin="153,312,0,0" VerticalAlignment="Top" Width="256" FontFamily="Broadway" FontSize="18"/>
+            <ListBox x:Name="etelkosar" HorizontalAlignment="Left" Height="226" Margin="50,312,0,0" VerticalAlignment="Top" Width="359" FontFamily="Broadway" FontSize="18"/>
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="kosar_back" Content="Vissza" HorizontalAlignment="Left" Margin="50,878,0,0" VerticalAlignment="Top" Width="200" Height="80
                     " Click="kosar_back_Click_1" Foreground="Black" FontFamily="Broadway" FontSize="18"/>
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="kosar_rendeles" Content="Rendelés leadása" HorizontalAlignment="Left" Margin="979,755,0,0" VerticalAlignment="Top" Width="200" Height="80" Click="kosar_rendeles_Click" Foreground="Black" FontFamily="Broadway" FontSize="18"/>
