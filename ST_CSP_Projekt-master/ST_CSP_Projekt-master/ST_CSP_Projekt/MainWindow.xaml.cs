@@ -142,8 +142,6 @@ namespace ST_CSP_Projekt
             string kor = reg_age_input.Text;
             int kor1 = 0;
 
-
-
             if (fnev != "" & email != "" & jelszo != "" & jelszo1 != "")
             {
                 if (int.TryParse(kor, out kor1))
@@ -635,6 +633,21 @@ namespace ST_CSP_Projekt
         private void shop2_logo_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Szeretünk Józsi Bácsi! ;)");
+        }
+
+        private void kosar_user_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void shop1_user_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void shop2_user_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

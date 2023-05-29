@@ -161,8 +161,8 @@
         <Grid x:Name="Kosar_Grid" Height="1000" Width="1700" Visibility="Hidden">
             <ListBox x:Name="etelkosar" HorizontalAlignment="Left" Height="226" Margin="153,312,0,0" VerticalAlignment="Top" Width="256" FontFamily="Broadway" FontSize="18"/>
             <Button Style="{StaticResource CustomButtonStyle}" x:Name="kosar_back" Content="Vissza" HorizontalAlignment="Left" Margin="50,878,0,0" VerticalAlignment="Top" Width="200" Height="80
-                    " Click="kosar_back_Click_1" Foreground="Black"/>
-            <Button Style="{StaticResource CustomButtonStyle}" x:Name="kosar_rendeles" Content="Rendelés leadása" HorizontalAlignment="Left" Margin="979,755,0,0" VerticalAlignment="Top" Width="200" Height="80" Click="kosar_rendeles_Click" Foreground="Black"/>
+                    " Click="kosar_back_Click_1" Foreground="Black" FontFamily="Broadway" FontSize="18"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="kosar_rendeles" Content="Rendelés leadása" HorizontalAlignment="Left" Margin="979,755,0,0" VerticalAlignment="Top" Width="200" Height="80" Click="kosar_rendeles_Click" Foreground="Black" FontFamily="Broadway" FontSize="18"/>
             <TextBox x:Name="kosar_telepules_input" HorizontalAlignment="Left" Height="30" Margin="1109,370,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" FontFamily="Broadway" FontSize="18"/>
             <TextBox x:Name="kosar_irszam_input" HorizontalAlignment="Left" Height="30" Margin="1109,417,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" FontFamily="Broadway" FontSize="18"/>
             <TextBox x:Name="kosar_utca_input" HorizontalAlignment="Left" Height="30" Margin="1109,462,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" FontFamily="Broadway" FontSize="18"/>
@@ -176,7 +176,7 @@
             <Label x:Name="kosar_fizetesmod" Content="Fizetési mód:" HorizontalAlignment="Left" Margin="822,635,0,0" Height="30" VerticalAlignment="Top" FontFamily="Broadway" FontSize="20"/>
             <TextBlock x:Name="kosar_osszeg" HorizontalAlignment="Left" Margin="36,562,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="538" Height="64" FontFamily="Broadway" FontSize="20"/>
             <Label x:Name="kosar_ossz" Content="Összesen:" HorizontalAlignment="Left" Margin="50,266,0,0" VerticalAlignment="Top" FontFamily="Broadway" FontSize="20"/>
-            <Button Style="{StaticResource CustomButtonStyle}" x:Name="kosar_delete" Content="Tartalom törlése" HorizontalAlignment="Left" Margin="428,394,0,0" VerticalAlignment="Top" Width="146" Height="53" Click="kosar_delete_Click" Foreground="Black"/>
+            <Button Style="{StaticResource CustomButtonStyle}" x:Name="kosar_delete" Content="Tartalom törlése" HorizontalAlignment="Left" Margin="428,394,0,0" VerticalAlignment="Top" Width="181" Height="53" Click="kosar_delete_Click" Foreground="Black" FontFamily="Broadway" FontSize="18"/>
             <Image Margin="101,694,1499,206" Width="100" Height="100" Source="diet.png" Stretch="Fill"/>
             <Image Margin="640,250,960,650" Width="100" Height="100" Source="hot-pot.png" Stretch="Fill"/>
             <Image Margin="1524,333,76,567" Width="100" Height="100" Source="fast-food.png" Stretch="Fill"/>
@@ -208,7 +208,7 @@
                         <ImageBrush ImageSource="facebook.png" Stretch="Uniform"/>
                     </Button.Background>
                 </Button>
-                <Button Style="{StaticResource Logocustom}" x:Name="kosar_user" HorizontalAlignment="Left" Margin="1485,38,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}">
+                <Button Style="{StaticResource Logocustom}" x:Name="kosar_user" HorizontalAlignment="Left" Margin="1485,38,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="kosar_user_Click">
                     <Button.Background>
                         <ImageBrush ImageSource="user.png" Stretch="Uniform"/>
                     </Button.Background>
@@ -269,7 +269,7 @@
                         <ImageBrush ImageSource="facebook.png" Stretch="Uniform"/>
                     </Button.Background>
                 </Button>
-                <Button Style="{StaticResource Logocustom}" x:Name="shop1_user" HorizontalAlignment="Left" Margin="1485,38,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}">
+                <Button Style="{StaticResource Logocustom}" x:Name="shop1_user" HorizontalAlignment="Left" Margin="1485,38,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="shop1_user_Click">
                     <Button.Background>
                         <ImageBrush ImageSource="user.png" Stretch="Uniform"/>
                     </Button.Background>
@@ -330,7 +330,7 @@
                         <ImageBrush ImageSource="facebook.png" Stretch="Uniform"/>
                     </Button.Background>
                 </Button>
-                <Button Style="{StaticResource Logocustom}" x:Name="shop2_user" HorizontalAlignment="Left" Margin="1485,38,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}">
+                <Button Style="{StaticResource Logocustom}" x:Name="shop2_user" HorizontalAlignment="Left" Margin="1485,38,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="shop2_user_Click">
                     <Button.Background>
                         <ImageBrush ImageSource="user.png" Stretch="Uniform"/>
                     </Button.Background>
