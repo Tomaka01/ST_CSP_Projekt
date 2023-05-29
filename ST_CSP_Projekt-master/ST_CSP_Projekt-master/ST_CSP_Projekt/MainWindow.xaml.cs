@@ -91,6 +91,7 @@ namespace ST_CSP_Projekt
             Bejelentkezes_Grid.Visibility = Visibility.Visible;
             Register_Grid.Visibility = Visibility.Visible;
             Bej_Logo_Grid.Visibility = Visibility.Visible;
+            Reg_Logo_Grid.Visibility = Visibility.Visible;
         }
 
         private void bej_logo_Click(object sender, RoutedEventArgs e)
@@ -150,7 +151,7 @@ namespace ST_CSP_Projekt
                     if (jelszo == jelszo1)
 
                     {
-                        if (person.Email.Contains("@") == true | person.Email.Contains(".") == true)
+                        if (person.Email.Contains("@") == true & person.Email.Contains(".") == true)
                         {
                             if (person.Kor < 100)
                             {
