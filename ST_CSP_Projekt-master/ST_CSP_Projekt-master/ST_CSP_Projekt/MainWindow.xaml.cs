@@ -532,8 +532,16 @@ namespace ST_CSP_Projekt
                     {
                         if (kosar_irszam_input.Text.Length == 4)
                         {
-                            MessageBox.Show("A rendelés leadva!");
-                            Close();
+                            if (foods.Count()>=1)
+                            {
+                                MessageBox.Show("A rendelés leadva!");
+                                Close();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Nincs semmi a kosárban!");
+                            }
+
                         }
                         else
                         {
