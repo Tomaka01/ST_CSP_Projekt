@@ -168,6 +168,12 @@ namespace ST_CSP_Projekt
                                             Bejelentkezes_Grid.Visibility = Visibility.Visible;
                                             Bej_Logo_Grid.Visibility = Visibility.Visible;
                                             Reg_Logo_Grid.Visibility = Visibility.Hidden;
+                                            reg_felh_input.Text = "";
+                                            reg_email_input.Text = "";
+                                            reg_pass_input.Password = "";
+                                            reg_pass_again_input.Password = "";
+                                            reg_age_input.Text = "";
+
                                         }
                                         else if (reg_female.IsChecked == true)
                                         {
@@ -178,6 +184,11 @@ namespace ST_CSP_Projekt
                                             Bejelentkezes_Grid.Visibility = Visibility.Visible;
                                             Bej_Logo_Grid.Visibility = Visibility.Visible;
                                             Reg_Logo_Grid.Visibility = Visibility.Hidden;
+                                            reg_felh_input.Text = "";
+                                            reg_email_input.Text = "";
+                                            reg_pass_input.Password = "";
+                                            reg_pass_again_input.Password = "";
+                                            reg_age_input.Text = "";
                                         }
                                     }
                                     else
