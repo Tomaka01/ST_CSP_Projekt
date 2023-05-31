@@ -208,7 +208,7 @@
                         <ImageBrush ImageSource="facebook.png" Stretch="Uniform"/>
                     </Button.Background>
                 </Button>
-                <Button Style="{StaticResource Logocustom}" x:Name="kosar_user" HorizontalAlignment="Left" Margin="1485,38,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="kosar_user_Click">
+                <Button Style="{StaticResource Logocustom}" x:Name="kosar_user" HorizontalAlignment="Left" Margin="1485,38,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}">
                     <Button.Background>
                         <ImageBrush ImageSource="user.png" Stretch="Uniform"/>
                     </Button.Background>
@@ -269,7 +269,7 @@
                         <ImageBrush ImageSource="facebook.png" Stretch="Uniform"/>
                     </Button.Background>
                 </Button>
-                <Button Style="{StaticResource Logocustom}" x:Name="shop1_user" HorizontalAlignment="Left" Margin="1485,38,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="shop1_user_Click">
+                <Button Style="{StaticResource Logocustom}" x:Name="shop1_user" HorizontalAlignment="Left" Margin="1485,38,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}">
                     <Button.Background>
                         <ImageBrush ImageSource="user.png" Stretch="Uniform"/>
                     </Button.Background>
@@ -330,7 +330,7 @@
                         <ImageBrush ImageSource="facebook.png" Stretch="Uniform"/>
                     </Button.Background>
                 </Button>
-                <Button Style="{StaticResource Logocustom}" x:Name="shop2_user" HorizontalAlignment="Left" Margin="1485,38,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}" Click="shop2_user_Click">
+                <Button Style="{StaticResource Logocustom}" x:Name="shop2_user" HorizontalAlignment="Left" Margin="1485,38,0,0" VerticalAlignment="Top" Width="150" Height="100" BorderBrush="{x:Null}">
                     <Button.Background>
                         <ImageBrush ImageSource="user.png" Stretch="Uniform"/>
                     </Button.Background>

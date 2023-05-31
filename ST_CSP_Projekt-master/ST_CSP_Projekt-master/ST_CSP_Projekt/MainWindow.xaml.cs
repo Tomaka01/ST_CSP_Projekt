@@ -19,6 +19,7 @@ namespace ST_CSP_Projekt
 {
     public partial class MainWindow : Window
     {
+        public string current_nev;
         public List<string> foods = new List<string>();
         public int osszegdb = 0;
         public int osszeg = 0;
@@ -43,6 +44,7 @@ namespace ST_CSP_Projekt
         private void bej_login_button_Click(object sender, RoutedEventArgs e)
         {
             string nev = bej_feh_input.Text;
+            current_nev = nev;
             if (nev!="" & bej_jelszo_input.Password!="")
             {
                 if (File.Exists(nev + ".txt"))
@@ -63,6 +65,10 @@ namespace ST_CSP_Projekt
                         Shop2_Logo_Grid.Visibility = Visibility.Hidden;
                         Kosar_Grid.Visibility = Visibility.Hidden;
                         Kosar_Logo_Grid.Visibility = Visibility.Hidden;
+                        kosar_username.Content = current_nev;
+                        shop1_username.Content = current_nev;
+                        shop2_username.Content = current_nev;
+
                     }
                     else
                     {
@@ -142,7 +148,7 @@ namespace ST_CSP_Projekt
             string file = fnev + ".txt";
             string kor = reg_age_input.Text;
             int kor1 = 0;
-
+            current_nev = fnev;
             if (fnev != "" & email != "" & jelszo != "" & jelszo1 != "")
             {
                 if (int.TryParse(kor, out kor1))
@@ -173,6 +179,7 @@ namespace ST_CSP_Projekt
                                             reg_pass_input.Password = "";
                                             reg_pass_again_input.Password = "";
                                             reg_age_input.Text = "";
+                                            kosar_username.Content = current_nev;
 
                                         }
                                         else if (reg_female.IsChecked == true)
@@ -655,19 +662,5 @@ namespace ST_CSP_Projekt
             MessageBox.Show("Szeretünk Józsi Bácsi! ;)");
         }
 
-        private void kosar_user_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void shop1_user_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void shop2_user_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
